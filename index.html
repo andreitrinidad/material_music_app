@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile">
+                    <li>
+                        <a class="waves-effect" href="#side-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="brand-logo">Progressive Web Player</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="waves-effect waves-light"><img src="img/person.png" alt="" class="circle avatar"
+                                width="30px"></a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-light"><i class="material-icons">more_vert</i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- </div> -->
+        </nav>
+    </header>
+
+    <div class="navbar-fixed">
+        <nav class="z-depth-0" style="background-color: #303030">
+            <div class="container">
+                <h4>
+                    <!-- CHANGE THE ACTIVE -->
+                    <span class="big-tab big-tab-active">Tracks</span>
+                    <span class="big-tab">Albums</span>
+                    <span class="big-tab">Artist</span>
+                    <span class="big-tab">Playlist</span>
+                </h4>
+            </div>
+        </nav>
+    </div>
+
+    <!-- YOUR CONTENT HERE -->
+    <div class="container">
+        <div class="row white-text">
+            <div class="col s12">
+                <!-- CONTENT STARTS HERE -->
+                Your content here
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- MEDIA CONTROLS -->
+    <div class="bottom-fixed grey darken-4 no-padding white-text z-depth-3">
+        <!-- PROGRESS BAR -->
+        <div class="progress red lighten-3">
+            <div class="determinate red" style="width: 70%"></div>
+        </div>
+
+        <!-- FOR SMALL SCREEN ONLY -->
+        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger waves-effect waves-light"
+            href="#player">
+            <p><span>Nadarang </span>&#x2022; Shanti Dong</p>
+        </div>
+
+        <!-- FOR MEDIUM AND UP -->
+        <div class="row no-margin">
+            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-light modal-trigger" href="#player">
+                <div class="col no-padding">
+                    <div style="width: 50px;">
+                        <img src="img/album1.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <span><b>Nadarang</b></span><br>
+                    Shanti Dong
+                </div>
+            </div>
+            <div class="col s12 m6 l4 center">
+                <span>0:00</span>
+                <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_previous</i></a>
+                <a href="#!" class="black pulse btn-floating waves-effect waves-light btn-large"><i
+                        class="material-icons">play_arrow</i></a>
+                <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_next</i></a>
+                <span>3:54</span>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-and-down">
+                <a href="#!" class="btn-floating right waves-effect waves-light transparent z-depth-0"><i
+                        class="material-icons">replay</i></a>
+                <a href="#!" class="btn-floating right waves-effect waves-light transparent z-depth-0"><i
+                        class="material-icons">shuffle</i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FULLSCREEN PLAYER -->
+    <div id="player" class="modal bottom-sheet grey darken-4">
+        <header class="navbar-fixed">
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile">
+                        <li>
+                            <a class="waves-effect  modal-close" href="#!">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="brand-logo center small-text">NOW PLAYING</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
+                    </ul>
+                </div>
+
+                <!-- </div> -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <img src="img/album1.jpg" class="responsive-img" alt="">
+                    </div>
+                    <div class="col s12 m6 l8 center white-text">
+                        <br>
+                        <h3>Nadarang</h3>
+                        <h5>Shanti Dong</h5>
+                        <br>
+                        <div class="progress red lighten-3">
+                            <div class="determinate red" style="width: 70%"></div>
+                        </div>
+                        <span>0:00</span>
+                        <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_previous</i></a>
+                        <a href="#!" class="black pulse btn-floating waves-effect waves-light btn-large"><i
+                                class="material-icons">play_arrow</i></a>
+                        <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_next</i></a>
+                        <span>3:54</span>
+
+                        <a href="#!"
+                            class="btn-floating right waves-effect waves-light btn-large transparent z-depth-0"><i
+                                class="material-icons">replay</i></a>
+                        <a href="#!"
+                            class="btn-floating left waves-effect waves-light btn-large transparent z-depth-0"><i
+                                class="material-icons">shuffle</i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        //JQUERY INITIALIZT
+        $(document).ready(function () {
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
+        });
+
+        //FOR PROGRESS BAR
+        let progress = 0;
+        function timeout() {
+            setTimeout(function () {
+                progress += 10;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress < 100) {
+                    // progress = 0;
+                   
+                }
+                else if (progress >= 99){
+                    progress = 0;
+                }
+
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+    </script>
+
+</body>
+
+</html>
