@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#202020">
-    <title>Document</title>
+    <title>Progressive Music</title>
 </head>
 
 
@@ -22,47 +24,76 @@
                 <!-- <div class="container">  -->
                 <ul id="nav-mobile">
                     <li>
-                        <a class="waves-effect" href="#side-nav">
+                        <a href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
                             <i class="material-icons">menu</i>
                         </a>
                     </li>
                 </ul>
 
-                <a href="#" class="brand-logo">Progressive Web Player</a>
+                <a href="#" class="brand-logo">Progressive Music</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <a class="waves-effect waves-light"><img src="img/person.png" alt="" class="circle avatar"
+                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
                                 width="30px"></a>
                     </li>
                     <li>
-                        <a class="waves-effect waves-light"><i class="material-icons">more_vert</i></a>
+                        <a class="waves-effect waves-purple"><i class="material-icons">more_vert</i></a>
                     </li>
 
                 </ul>
             </div>
-
-            <!-- </div> -->
         </nav>
     </header>
+    <!-- <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
+        <br>
+        <div class="center"> <i class="material-icons deep-purple-text text-lighten-1 large">headset</i></div>
+        <h6 class="center">Progressive Web Player</h6>
+        <br>
+        <li>
+           
+                    <div class="row no-padding no-margin">
+                            <div class="col s3 push-s1" ><img class="circle responsive-img" src="img/person.png"></div>
+                            <div class="col s7 push-s1 puush no-margin">
+                                  Andrei Trinidad
+                            </div>
+                            
+                        </div>
+                        
+       
 
+        </li>
+        <li class="deep-purple"><a href="#!" class="white-text"><i class="material-icons white-text">album</i>Tracks</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">queue_music</i>Playlist</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
+        <!-- <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Artists</a></li> -->
+        <li><a href="#!" class="white-text btn deep-purple">SIGN OUT</a></li>
+       
+    </ul>
+
+    <!-- BIG ASS HEADERS (TABS)-->
     <div class="navbar-fixed hide-on-small-only">
-        <nav class="z-depth-0" style="background-color: #303030">
+       <nav class="z-depth-0 tab" style="background-color: #303030">
+           
             <div class="container">
                 <h4>
                     <!-- CHANGE THE ACTIVE -->
-                    <span class="big-tab big-tab-active">Tracks</span>
+                    <a class="big-tab big-tab-active" href="#content scrollspy">Tracks</a>
                     <span class="big-tab">Albums</span>
                     <span class="big-tab">Artist</span>
                     <span class="big-tab">Playlist</span>
                 </h4>
             </div>
         </nav>
+  
     </div>
+
 
     <!-- YOUR CONTENT HERE -->
     <div class="container">
         <div class="row white-text">
-            <div class="col s12">
+            <div id="content" class="col s12">
                 <!-- CONTENT STARTS HERE -->
                 Your content here
             </div>
@@ -70,22 +101,22 @@
     </div>
     </div>
 
-    <!-- MEDIA CONTROLS -->
-    <div class="bottom-fixed grey darken-4 no-padding white-text z-depth-3">
+    <!-- BOTTOM MEDIA CONTROLS -->
+    <div class="bottom-fixed grey darken-4 white-text z-depth-3  waves-effect waves-purple" style="padding-bottom: 10px;">
         <!-- PROGRESS BAR -->
-        <div class="progress red lighten-3">
-            <div class="determinate red" style="width: 70%"></div>
+        <div class="progress grey">
+            <div class="determinate purple" style="width: 70%"></div>
         </div>
 
         <!-- FOR SMALL SCREEN ONLY -->
-        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger waves-effect waves-light"
+        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger"
             href="#player">
             <p><span>Nadarang </span>&#x2022; Shanti Dong</p>
         </div>
 
         <!-- FOR MEDIUM AND UP -->
         <div class="row no-margin">
-            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-light modal-trigger" href="#player">
+            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
                 <div class="col no-padding">
                     <div style="width: 50px;">
                         <img src="img/album1.jpg" alt="" class="responsive-img">
@@ -98,18 +129,18 @@
             </div>
             <div class="col s12 m6 l4 center">
                 <span>0:00</span>
-                <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                         class="material-icons">skip_previous</i></a>
-                <a href="#!" class="black pulse btn-floating waves-effect waves-light btn-large"><i
+                <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
                         class="material-icons">play_arrow</i></a>
-                <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                         class="material-icons">skip_next</i></a>
                 <span>3:54</span>
             </div>
             <div class="col s12 m6 l4 hide-on-med-and-down">
-                <a href="#!" class="btn-floating right waves-effect waves-light transparent z-depth-0"><i
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
                         class="material-icons">replay</i></a>
-                <a href="#!" class="btn-floating right waves-effect waves-light transparent z-depth-0"><i
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
                         class="material-icons">shuffle</i></a>
             </div>
         </div>
@@ -152,20 +183,63 @@
                             <div class="determinate red" style="width: 70%"></div>
                         </div>
                         <span>0:00</span>
-                        <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                                 class="material-icons">skip_previous</i></a>
-                        <a href="#!" class="black pulse btn-floating waves-effect waves-light btn-large"><i
+                        <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
                                 class="material-icons">play_arrow</i></a>
-                        <a href="#!" class="btn-floating waves-effect waves-light btn-large transparent z-depth-0"><i
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                                 class="material-icons">skip_next</i></a>
                         <span>3:54</span>
 
                         <a href="#!"
-                            class="btn-floating right waves-effect waves-light btn-large transparent z-depth-0"><i
+                            class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
                                 class="material-icons">replay</i></a>
                         <a href="#!"
-                            class="btn-floating left waves-effect waves-light btn-large transparent z-depth-0"><i
+                            class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
                                 class="material-icons">shuffle</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="s12 center white-text">
+                        <h6>UP NEXT</h6>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Materyal <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Norem <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Shantidong <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
+                                    <td>
+                                        I'm captivated <br>
+                                        <span class="smaller-text">IV of SPED</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                              
+                          
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -179,29 +253,19 @@
 
 
     <!-- SCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <script>
-        //JQUERY INITIALIZT
-        $(document).ready(function () {
-            $('.modal').modal();
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true
-            });
-        });
-
-        //FOR PROGRESS BAR
-        let progress = 0;
-        function timeout() {
+               function timeout() {
             setTimeout(function () {
-                progress += 10;
+                progress += 1;
                 document.querySelector('.determinate').style.width = `${progress}%`;
                 if (progress < 100) {
                     // progress = 0;
-                   
-                }
-                else if (progress >= 99){
+
+                } else if (progress >= 99) {
                     progress = 0;
                 }
 
@@ -210,6 +274,21 @@
 
         }
         timeout();
+        //JQUERY INITIALIZE
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.scrollspy').scrollspy();
+          
+        });
+
+        //FOR PROGRESS BAR
+        let progress = 0;
+
+ 
     </script>
 
 </body>

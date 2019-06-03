@@ -37,7 +37,7 @@ body{
 }
 
 .no-margin{
-    margin: 0%;
+    margin: 0 !important;
 }
 
 .progress{
@@ -48,3 +48,9 @@ body{
     min-height: 100% !important;
     background-color: #303030 !important;
 }
+
+.smaller-text{
+    font-size: 0.85rem !important;
+    color: grey;
+}
+
