@@ -1,0 +1,56 @@
+.avatar{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.brand-logo{
+    font-size: 1rem !important;
+}
+.small-text{
+    font-size: 1rem !important;
+}
+
+body{
+    background-color: #303030;
+    height: 1000px;
+    font-family: Roboto !important;
+}
+
+/* FIXED THE FOOTER */
+.bottom-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.big-tab{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.big-tab-active{
+    color: white;
+}
+
+.no-padding{
+    padding: 0 !important;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+
+.progress{
+    margin-top: 0 !important;
+}
+
+#player {
+    min-height: 100% !important;
+    background-color: #303030 !important;
+}
+
+.smaller-text{
+    font-size: 0.85rem !important;
+    color: grey;
+}
+

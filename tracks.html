@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <title>Progressive Music</title>
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile">
+                    <li>
+                        <a href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="brand-logo">Progressive Music</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
+                                width="30px"></a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-purple"><i class="material-icons">more_vert</i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
+        <br>
+        <div class="center"> <i class="material-icons deep-purple-text text-lighten-1 large">headset</i></div>
+        <h6 class="center">Progressive Web Player</h6>
+        <h2>
+        <li>
+           
+                    <div class="row no-padding no-margin">
+                            <div class="col s3 push-s1" ><img class="circle responsive-img" src="img/person.png"></div>
+                            <div class="col s7 push-s1 puush no-margin">
+                                  Andrei Trinidad
+                            </div>
+                            
+                        </div>
+                        
+       
+
+        </li>
+        <li class="deep-purple"><a href="#!" class="white-text"><i class="material-icons white-text">album</i>Tracks</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">queue_music</i>Playlist</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
+        <!-- <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Artists</a></li> -->
+        <li><a href="#!" class="white-text btn deep-purple">SIGN OUT</a></li>
+       
+    </ul>
+
+    <!-- BIG ASS HEADERS (TABS)-->
+    <div class="navbar-fixed hide-on-small-only">
+       <nav class="z-depth-0 tab" style="background-color: #303030">
+           
+            <div class="container">
+                <h4>
+                    <!-- CHANGE THE ACTIVE -->
+                    <a class="big-tab big-tab-active" href="#content scrollspy">Tracks</a>
+                    <span class="big-tab">Albums</span>
+                    <span class="big-tab">Artist</span>
+                    <span class="big-tab">Playlist</span>
+                </h4>
+            </div>
+        </nav>
+  
+    </div>
+
+
+    <!-- YOUR CONTENT HERE -->
+    <div class="container grey darken-4">
+        <div class="row white-text">
+            <div id="content" class="col s12">
+            <div class="col s6">
+                <h2 class="deep purple-text text-lighten-2 left"><em>Tracks</em></h2>
+            </div>
+                <br>
+                <!-- CONTENT STARTS HERE -->
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th> <h5 class="deep purple-text text-lighten-2">Tracks</h5></th>
+                            <th> <h5 class="deep purple-text text-lighten-2">Artists</h5></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <div class="input-field col s4 right">
+                                <i class="material-icons prefix deep purple-text text-white">search</i>
+                                <input id="prefix" type="text" class="validate">
+                                <label for="icon-prefix">Search</label>
+                            </div>
+                        </tr>
+                    </thead>   
+                    <tbody>
+                        <tr>
+                            <td>Count Me In</td>
+                            <td>All Time Low - Dear Maria</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">pause</i></td>
+                            <td>3:05</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Araw-Gabi</td>
+                            <td>Kaye Cal</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>5:46</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>All I Ever Need</td>
+                            <td>Austin Mahone</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:31</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Bakit Ba Ikaw</td>
+                            <td>Michael Pangilinan</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>4:27</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Beautiful</td>
+                            <td>Crush (Goblin OST)</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:21</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Best Friend</td>
+                            <td>Jason Chen</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>2:59</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Buwan</td>
+                            <td>KJ Labajo</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:41</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Andito Lang Ako</td>
+                            <td>KJ Labajo</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:32</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Little Do You Know</td>
+                            <td>Alex & Sierra</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:04</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Nadarang</td>
+                            <td>Shanti Dong</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>2:44</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>On Bended Knee</td>
+                            <td>Boyz II Men</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:43</td>
+                            <td><a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td>Bubbly</td>
+                            <td>Colbie Caillat</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>4:21</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>You Are The Reason</td>
+                            <td>Calum Scott</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:57</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Just The Way You Are</td>
+                            <td>Bruno Mars</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>4:33</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Attention</td>
+                            <td>Charlie Puth</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>5:01</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Solo</td>
+                            <td>Clean Bandit</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>6:01</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Realize</td>
+                            <td>Cobbie Caillat</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:42</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dura</td>
+                            <td>Daddy Yankee</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>5:47</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dalaga</td>
+                            <td>Allmo$t</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>6:02</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dear Biyenan</td>
+                            <td>Breezy Boys & Abaddon</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>4:23</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Eroplanong Papel</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>4:06</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <td>Sa Ngalan Ng Pagibig</td>
+                            <td>Decermber Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>5:08</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>Dahan</td>
+                            <td>December Avenue</td>
+                            <td><i class="material-icons waves-effect waves-light deep purple-text">play_arrow</i></td>
+                            <td>3:49</td>
+                            <td>
+                                <a>
+                                <i class="material-icons waves-effect waves-light white-text">more_vert</i>
+                                </a>
+                            </td>
+                            </tr>
+                    </tbody>
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- BOTTOM MEDIA CONTROLS -->
+    <div class="bottom-fixed grey darken-4 white-text z-depth-3  waves-effect waves-purple" style="padding-bottom: 10px;">
+        <!-- PROGRESS BAR -->
+        <div class="progress grey">
+            <div class="determinate purple" style="width: 70%"></div>
+        </div>
+
+        <!-- FOR SMALL SCREEN ONLY -->
+        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger"
+            href="#player">
+            <p><span>Nadarang </span>&#x2022; Shanti Dong</p>
+        </div>
+
+        <!-- FOR MEDIUM AND UP -->
+        <div class="row no-margin">
+            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
+                <div class="col no-padding">
+                    <div style="width: 50px;">
+                        <img src="img/album1.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <span><b>Nadarang</b></span><br>
+                    Shanti Dong
+                </div>
+            </div>
+            <div class="col s12 m6 l4 center">
+                <span>0:00</span>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_previous</i></a>
+                <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                        class="material-icons">play_arrow</i></a>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_next</i></a>
+                <span>3:54</span>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-and-down">
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                        class="material-icons">replay</i></a>
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                        class="material-icons">shuffle</i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FULLSCREEN PLAYER -->
+    <div id="player" class="modal bottom-sheet grey darken-4">
+        <header class="navbar-fixed">
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile">
+                        <li>
+                            <a class="waves-effect  modal-close" href="#!">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="brand-logo center small-text">NOW PLAYING</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
+                    </ul>
+                </div>
+
+                <!-- </div> -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <img src="img/album1.jpg" class="responsive-img" alt="">
+                    </div>
+                    <div class="col s12 m6 l8 center white-text">
+                        <br>
+                        <h3>Nadarang</h3>
+                        <h5>Shanti Dong</h5>
+                        <br>
+                        <div class="progress red lighten-3">
+                            <div class="determinate red" style="width: 70%"></div>
+                        </div>
+                        <span>0:00</span>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_previous</i></a>
+                        <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                                class="material-icons">play_arrow</i></a>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_next</i></a>
+                        <span>3:54</span>
+
+                        <a href="#!"
+                            class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">replay</i></a>
+                        <a href="#!"
+                            class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">shuffle</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="s12 center white-text">
+                        <h6>UP NEXT</h6>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Materyal <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Norem <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Shantidong <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
+                                    <td>
+                                        I'm captivated <br>
+                                        <span class="smaller-text">IV of SPED</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i></td>
+                                </tr>
+                              
+                          
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script>
+            function timeout() {
+            setTimeout(function () {
+                progress += 1;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress < 100) {
+                    // progress = 0;
+
+                } else if (progress >= 99) {
+                    progress = 0;
+                }
+
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+        //JQUERY INITIALIZE
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.scrollspy').scrollspy();
+        
+        });
+
+        //FOR PROGRESS BAR
+        let progress = 0;
+
+ 
+    </script>
+
+</body>
+
+</html>
