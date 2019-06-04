@@ -1,3 +1,95 @@
+/* FOR INPUT SLIDER ONLY */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 11.65px 0;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2.7px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px;
+    border: 0px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #673ab7, 0px 0px 0px #7446c4;
+    border: 5.1px solid #673ab7;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11.65px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.78);
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2.7px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px;
+    border: 0px solid #010101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #673ab7, 0px 0px 0px #7446c4;
+    border: 5.1px solid #673ab7;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 2.7px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: rgba(128, 128, 128, 0.78);
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.78);
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #673ab7, 0px 0px 0px #7446c4;
+    border: 5.1px solid #673ab7;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    height: 2.7px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: rgba(255, 255, 255, 0.78);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.78);
+  }
+.thumb{
+    display: none !important;
+     background-color: transparent !important;
+ }
+  
+/* END OF INPUT */
 .avatar{
     margin-top: 10px;
     margin-bottom: -10px;
@@ -51,6 +143,71 @@ body{
 
 .smaller-text{
     font-size: 0.85rem !important;
-    color: grey;
+    color: grey !important;
 }
 
+
+/* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
+.tabs-custom{
+    background-color: #303030 !important;
+}
+
+.tabs-custom .tab a {
+  color: #fff !important;
+  /* font-size: 1.5rem !important; */
+  /*Custom Text Color*/
+}
+
+.tabs-custom .tab a:hover {
+  color: white !important;
+  /*Custom Color On Hover*/
+}
+
+.tabs-custom .tab a:focus.active {
+  /* color:#26a69a !important; */
+  /*Custom Text Color While Active*/
+ 
+  /* background-color:black !important; */
+  /*Custom Background Color While Active*/
+  background-color: #673AB7 !important;
+}
+
+.tabs-custom .indicator {
+  background-color: #673AB7 !important;
+  /*Custom Color Of Indicator*/
+}
+
+/* PARA DI MASELECT YUNG TEXT */
+a{
+    user-select: none !important;
+}
+
+
+.dropdown-content li>a:hover {
+    background-color: #673AB7  !important;
+    color: white !important;
+}
+.dropdown-content li>a:active {
+    background-color: rgb(0, 0, 0)  !important;
+    color: white !important;
+}
+.dropdown-content li>a {
+    /* background-color: #673AB7  !important; */
+    color: white !important;
+}
+
+
+a .material-icons:hover{
+  color: #a16bff !important;
+}
+
+/* OVERRIDE DROPDOWN CHUCHU */
+
+.dropdown-content {
+  overflow-y: visible !important;
+}
+
+#context-menu-dropdown-submenu {
+  top: -40px !important;
+  left: -40px !important;
+}
