@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <title>Progressive Music</title>
+</head>
+
+
+<body>
+
+        <div class="navbar-fixed">
+                <nav class="z-depth-0 tab" style="background-color: #303030">
+        
+                    <div class="container">
+                        <h4>
+                            <!-- CHANGE THE ACTIVE -->
+                            <a href="#test-swipe-1" class="big-tab big-tab-active" >Tracks</a>
+                            <a href="#test-swipe-2" class="big-tab " >Artist</a>
+                            <a href="#test-swipe-3" class="big-tab " >ALbums</a>
+                            <!-- <span class="big-tab">Albums</span>
+                            <span class="big-tab">Artist</span>
+                            <span class="big-tab">Playlist</span> -->
+                        </h4>
+                    </div>
+                </nav>
+        
+            </div>
+        <ul id="tabs-swipe-demo" class="tabs" style="display: none">
+                <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
+                <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
+                <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+              </ul>
+
+
+              <div id="test-swipe-1" class="col s12 blue">tracks</div>
+              <div id="test-swipe-2" class="col s12 red">albums</div>
+              <div id="test-swipe-3" class="col s12 green">artists</div>
+
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+    <script>
+
+
+        //JQUERY INITIALIZE
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            // $('.scrollspy').scrollspy();
+            $('#tabs-swipe-demo').tabs({
+                swipeable: true
+            });
+
+            
+
+        });
+
+        // //FOR PROGRESS BAR
+        // let progress = 0;
+    </script>
+
+</body>
+
+</html>
