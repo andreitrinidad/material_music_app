@@ -189,6 +189,14 @@ body{
   /*Custom Color Of Indicator*/
 }
 
+.tabs-content{
+  background-color: #303030 !important;
+  min-height: auto !important;
+  margin-top: 50px !important;
+  height: calc(100% + 500px) !important;
+  /* padding-bottom: 200px !important; */
+}
+
 /* PARA DI MASELECT YUNG TEXT */
 a{
     user-select: none !important;
@@ -249,3 +257,4 @@ a .material-icons:hover{
 .parallax-container{
   background-color: rgba(0, 0, 0, 0.541);
 }
+
