@@ -21,12 +21,13 @@
 
     <!-- NAVBAR -->
     <header class="navbar-fixed">
-        <nav class="grey darken-4">
+        <nav class="nav-extended grey darken-4">
             <div class="nav-wrapper">
                 <!-- <div class="container">  -->
                 <ul id="nav-mobile" class="waves-effect waves-purple">
                     <li>
-                        <a id="menu" href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                        <a id="menu" href="#" class="waves-effect sidenav-trigger no-margin show-on-large"
+                            data-target="side-nav">
                             <i class="material-icons">menu</i>
                         </a>
                     </li>
@@ -43,7 +44,16 @@
                                 class="material-icons">more_vert</i></a>
                     </li>
                 </ul>
+                
             </div>
+            <div class="nav-content">
+                    <ul id="tabs-swipe-demo" class="tabs tabs-custom  grey darken-4"> 
+                            <li class="tab col s3"><a href="#test-swipe-1">Tracks</a></li>
+                            <li class="tab col s3"><a href="#test-swipe-2">Albums</a></li>
+                            <li class="tab col s3"><a class="active" href="#test-swipe-3">Artist</a></li>
+                            <li class="tab col s3"><a href="#test-swipe-4">Playlist</a></li>
+                        </ul>
+                  </div>
         </nav>
     </header>
     <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
@@ -88,21 +98,31 @@
     </ul>
 
     <!-- BIG ASS HEADERS (TABS)-->
-    <div class="navbar-fixed hide-on-small-only">
+    <div class="hide-on-small-only">
         <nav class="z-depth-0 tab" style="background-color: #303030">
             <div class="container">
-                <h4>
-                    <!-- CHANGE THE ACTIVE -->
-                    <a class="big-tab big-tab-active" href="#content scrollspy">Tracks</a>
-                    <span class="big-tab">Albums</span>
-                    <span class="big-tab">Artist</span>
-                    <span class="big-tab">Playlist</span>
-                </h4>
+                <!-- <h4>
+                    CHANGE THE ACTIVE
+                    <a class="big-tab big-tab-active" href="#test-swipe-1">Tracks</a>
+                    <a class="big-tab" href="#test-swipe-2">Albums</a>
+                    <a class="big-tab" href="#test-swipe-3">Artist</a>
+                    <a class="big-tab" href="#test-swipe-4">Playlist</a>
+                </h4> -->
+           
+                
             </div>
         </nav>
 
     </div>
 
+    
+
+    <div id="test-swipe-1" class="col s12 blue">tracks</div>
+    <div id="test-swipe-2" class="col s12 red"><a href="" id="menu">target</a> albums
+        <a class="btn next" onclick="$('#target1').tapTarget('open')">NEXT</a>
+    </div>
+    <div id="test-swipe-3" class="col s12 green">artists</div>
+    <div id="test-swipe-4" class="col s12 green">playlist</div>
     <!-- YOUR CONTENT HERE -->
     <div class="container">
         <div class="row white-text">
@@ -348,13 +368,13 @@
             <p>The most advanced PWA music app. Get Premium to unlock all features</p>
         </div>
         <div class="modal-footer">
-            <a class="btn right deep-purple-gradient waves-effect"
-                onclick="$('.feature').tapTarget('open')">GET PREMIUM</a>
+            <a class="btn right deep-purple-gradient waves-effect" onclick="$('.feature').tapTarget('open')">GET
+                PREMIUM</a>
             <a id="skip" class="btn-flat left waves-effect modal-close">SKIP</a>
         </div>
     </div>
 
-  
+
 
 
     <!-- SCRIPTS -->

@@ -33,7 +33,7 @@
             </nav>
 
         </div>
-        <ul id="tabs-swipe-demo" class="tabs" style="display: none">
+        <ul id="tabs-swipe-demo" class="tabs tabs-custom">
             <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
             <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
             <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
@@ -44,7 +44,7 @@
         <div id="test-swipe-2" class="col s12 red"><a href="" id="menu">target</a> albums
             <a class="btn next" onclick="$('#target1').tapTarget('open')">NEXT</a>
         </div>
-        <div id="test-swipe-3" class="col s12 green" style="width: 100px !important;">artists</div>
+        <div id="test-swipe-3" class="col s12 green">artists</div>
 
 
 
@@ -67,15 +67,15 @@
     <script>
         //JQUERY INITIALIZE
         $(document).ready(function () {
-            // $('.sidenav').sidenav();
-            // $('.modal').modal();
-            // $('.carousel.carousel-slider').carousel({
-            //     fullWidth: true
-            // })
-            // // $('.scrollspy').scrollspy();
-            // $('#tabs-swipe-demo').tabs({
-            //     swipeable: true
-            // });
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            // $('.scrollspy').scrollspy();
+            $('#tabs-swipe-demo').tabs({
+                swipeable: true
+            });
 
 
             $('#target1').tapTarget();
