@@ -1,5 +1,5 @@
 /* FOR INPUT SLIDER ONLY */
-input[type=range] {
+  input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     margin: 11.65px 0;

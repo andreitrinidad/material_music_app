@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <title>Progressive Music</title>
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile">
+                    <li>
+                        <a href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="brand-logo">Progressive Music</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
+                                width="30px"></a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-purple"><i class="material-icons">more_vert</i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
+        <br>
+        <div class="center"> <i class="material-icons deep-purple-text text-lighten-1 large">headset</i></div>
+        <h6 class="center">Progressive Web Player</h6>
+        <br>
+        <li>
+
+            <div class="row no-padding no-margin">
+                <div class="col s3 push-s1"><img class="circle responsive-img" src="img/person.png"></div>
+                <div class="col s7 push-s1 puush no-margin">
+                    Andrei Trinidad
+                </div>
+            </div>
+
+
+
+        </li>
+        <li class="deep-purple"><a href="#tracks.html" class="white-text"><i
+                    class="material-icons white-text">album</i>Tracks</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">queue_music</i>Playlist</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
+        <!-- <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Artists</a></li> -->
+        <li><a href="#!" class="white-text btn deep-purple">SIGN OUT</a></li>
+    </ul>
+    <!-- BIG ASS HEADERS (TABS)-->
+    <div class="navbar-fixed hide-on-small-only">
+        <nav class="z-depth-0 tab" style="background-color: #303030">
+
+            <div class="container">
+                <h4>
+                    <!-- CHANGE THE ACTIVE -->
+                    <a class="big-tab big-tab" href="#content scrollspy">Tracks</a>
+                    <span class="big-tab">Albums</span>
+                    <span class="big-tab-active">Artist</span>
+                    <span class="big-tab">Playlist</span>
+                </h4>
+            </div>
+        </nav>
+    </div>
+    <!-- YOUR CONTENT HERE -->
+    <!-- Section Artists  -->
+    <section class="section section-artists grey darken-4">
+        <div class="container">
+            <div class="input-field" style="position: absolute; left: 70%;">
+                <i class="material-icons prefix">search</i>
+                <input id="icon_prefix" type="search" class="validate">
+                <label for="icon_prefix">Seach</label>
+            </div>
+            <!-- <div class="Input-field" style="position: absolute;  left:70%;">
+               <i class="material-icons">search</i>
+                    <input type="search" placeholder="Search..." style="color: white" required>
+                    <label for=""></label>
+                </div> -->
+            <h3><span class="deep purple-text darken-2">Artists</span></h3>
+
+            <!-- CARD WITH IMAGE -->
+            <div class="row">
+                <div class="col s6 m4 l3">
+                    <!-- Image 1 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist1.jpg"
+                        href="#modal1" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal1" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Shanti Dope</h5>
+                            <div class="container">
+                                <img src="img/artistpg1.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Shanti Dope</p>
+                </div> <!-- Closing Image 1 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 2 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist2.jpg"
+                        href="#modal2" alt="avatar" style="border-radius: 50%">
+                    <!-- modal trigger -->
+                    <div id="modal2" class="modal modal-fixed-footer">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Coldplay</h5>
+                            <div class="container">
+                                <img src="img/artistpg2.jpg" style="width: 500px">
+                                <p style="color: white">Coldplay are a British rock band formed in London in 1996.[1][2]
+                                    The four members, lead vocalist/pianist
+                                    Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman and drummer Will
+                                    Champion were at University College London
+                                    and came together from 1996 to 1998, during which time the band changed names from
+                                    Pectoralz, to Starfish, then Coldplay.[3][4]
+                                    Creative director and former manager Phil Harvey is often referred to as the fifth
+                                    member by the band.[4] They recorded and
+                                    released two EPs: Safety in 1998 and The Blue Room in 1999. The latter was their
+                                    first release on a major label, after signing
+                                    to Parlophone</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Coldplay</p>
+                </div> <!-- Closing Image 2 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 3 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist3.jpg"
+                        href="#modal3" alt="avatar" style="border-radius: 50%">
+                    <!-- modal trigger -->
+                    <div id="modal3" class="modal modal-fixed-footer">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Two Door Cinema Club</h5>
+                            <div class="container">
+                                <img src="img/artistpg3.jpg" style="width: 500px">
+                                <p style="color: white">wo Door Cinema Club are a Northern Irish indie rock band from
+                                    Bangor and Donaghadee, County
+                                    Down. The band formed in 2007 and is composed of three members: Alex Trimble
+                                    (vocals, rhythm guitar, beats, synths),
+                                    Sam Halliday (lead guitar, backing vocals), and Kevin Baird (bass, synths, backing
+                                    vocals). The band's debut album,
+                                    Tourist History, was released on 1 March 2010 by French independent record label
+                                    Kitsuné Music. In the United States,
+                                    where the band are signed to Glassnote Records, the album was released on 27 April
+                                    2010. Tourist History was selected
+                                    for the Choice Music Prize for Irish Album of the Year (2010) the following year.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Two Door Cinema CLub</p>
+                </div> <!-- Closing Image 3 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 4 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist4.jpg"
+                        href="#modal4" alt="avatar" style="border-radius: 50%">
+                    <!-- modal trigger -->
+                    <div id="modal4" class="modal modal-fixed-footer">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Jessie Reyez</h5>
+                            <div class="container">
+                                <img src="img/artistpg4.jpg" style="width: 500px">
+                                <p style="color: white">Jessie Reyez (born June 12, 1991) is a Canadian singer and
+                                    songwriter. Her 2016 single
+                                    "Figures" peaked at number 58 on the Canadian Hot 100 in 2017 and was certified
+                                    double platinum by Music Canada.
+                                    In August 2018, Reyez collaborated with Eminem on "Nice Guy" and "Good Guy", from
+                                    the album Kamikaze.
+                                    On April 9, 2019, Reyez released the single “Imported'” featuring 6lack.</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Jessie Reyez</p>
+                </div> <!-- Closing Image 4 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 5 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist5.jpg"
+                        href="#modal5" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal5" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Russ</h5>
+                            <div class="container">
+                                <img src="img/artistpg5.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Russ</p>
+                </div> <!-- Closing Image 5 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 6 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist6.jpg"
+                        href="#modal6" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal6" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Billie Eilish</h5>
+                            <div class="container">
+                                <img src="img/artistpg6.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Billie Eilish</p>
+                </div> <!-- Closing Image 6 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 7 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist7.jpg"
+                        href="#modal7" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal7" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Bruno Mars</h5>
+                            <div class="container">
+                                <img src="img/artistpg7.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as HAIM, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    HAIM started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Bruno Mars</p>
+                </div> <!-- Closing Image 7 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 8 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist8.jpg"
+                        href="#modal8" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal8" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">HAIM</h5>
+                            <div class="container">
+                                <img src="img/artistpg8.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as Ezra Furman, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    Ezra Furman started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">HAIM</p>
+                </div> <!-- Closing Image 8 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 9 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist9.jpg"
+                        href="#modal9" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal9" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Logic</h5>
+                            <div class="container">
+                                <img src="img/artistpg9.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as Logic, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    Logic started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Logic</p>
+                </div> <!-- Closing Image 9 -->
+                <div class="col s6 m4 l3">
+                    <!-- Image 10 -->
+                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist10.jpg"
+                        href="#modal10" alt="avatar" style="border-radius: 50%; border-image: 10px;">
+                    <!-- modal trigger -->
+                    <div id="modal10" class="modal modal-fixed-footer" style="width: 60%;">
+                        <!-- modal content -->
+                        <div class="modal-content" style="background: #212121">
+                            <h5 style="color: white; text-align: center">Ezra Furman</h5>
+                            <div class="container">
+                                <img src="img/artistpg10.jpg" style="width: 500px">
+                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
+                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
+                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
+                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
+                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
+                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
+                                    Distance</p>
+                            </div>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer" style="background: black">
+                            <a href="#!"
+                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                        </div>
+                    </div>
+                    <p style="color: white ; text-align: center; font-size: 20px">Ezra Furman</p>
+                </div> <!-- Closing Image 10 -->
+                <!-- Closing Row 1 -->
+                <!-- row 2 -->
+            </div>
+    </section>
+    </div>
+
+    <!-- BOTTOM MEDIA CONTROLS -->
+    <div class="bottom-fixed grey darken-4 white-text z-depth-3  waves-effect waves-purple"
+        style="padding-bottom: 10px;">
+        <!-- PROGRESS BAR -->
+        <div class="progress grey">
+            <div class="determinate purple" style="width: 70%"></div>
+        </div>
+
+        <!-- FOR SMALL SCREEN ONLY -->
+        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger" href="#player">
+            <p><span>Nadarang </span>&#x2022; Shanti Dong</p>
+        </div>
+
+        <!-- FOR MEDIUM AND UP -->
+        <div class="row no-margin">
+            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
+                <div class="col no-padding">
+                    <div style="width: 50px;">
+                        <img src="img/album1.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <span><b>Nadarang</b></span><br>
+                    Shanti Dong
+                </div>
+            </div>
+            <div class="col s12 m6 l4 center">
+                <span>0:00</span>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_previous</i></a>
+                <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                        class="material-icons">play_arrow</i></a>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_next</i></a>
+                <span>3:54</span>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-and-down">
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                        class="material-icons">replay</i></a>
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                        class="material-icons">shuffle</i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FULLSCREEN PLAYER -->
+    <div id="player" class="modal bottom-sheet grey darken-4">
+        <header class="navbar-fixed">
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile">
+                        <li>
+                            <a class="waves-effect  modal-close" href="#!">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="brand-logo center small-text">NOW PLAYING</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
+                    </ul>
+                </div>
+
+                <!-- </div> -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <img src="img/album1.jpg" class="responsive-img" alt="">
+                    </div>
+                    <div class="col s12 m6 l8 center white-text">
+                        <br>
+                        <h3>Nadarang</h3>
+                        <h5>Shanti Dong</h5>
+                        <br>
+                        <div class="progress red lighten-3">
+                            <div class="determinate red" style="width: 70%"></div>
+                        </div>
+                        <span>0:00</span>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_previous</i></a>
+                        <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                                class="material-icons">play_arrow</i></a>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_next</i></a>
+                        <span>3:54</span>
+
+                        <a href="#!"
+                            class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">replay</i></a>
+                        <a href="#!"
+                            class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">shuffle</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="s12 center white-text">
+                        <h6>UP NEXT</h6>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Materyal <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Norem <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Shantidong <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
+                                    <td>
+                                        I'm captivated <br>
+                                        <span class="smaller-text">IV of SPED</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script>
+        function timeout() {
+            setTimeout(function () {
+                progress += 1;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress < 100) {
+                    // progress = 0;
+
+                } else if (progress >= 99) {
+                    progress = 0;
+                }
+
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+        //JQUERY INITIALIZE
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.parallax-container').parallax();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.scrollspy').scrollspy();
+
+        });
+
+        //FOR PROGRESS BAR
+        let progress = 0;
+
+
+    </script>
+
+</body>
+
+</html>
