@@ -17,6 +17,8 @@
 
 
 <body>
+
+
     <!-- NAVBAR -->
     <header class="navbar-fixed">
         <nav class="grey darken-4">
@@ -24,7 +26,7 @@
                 <!-- <div class="container">  -->
                 <ul id="nav-mobile" class="waves-effect waves-purple">
                     <li>
-                        <a href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                        <a id="menu" href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
                             <i class="material-icons">menu</i>
                         </a>
                     </li>
@@ -36,17 +38,17 @@
                                 width="30px"></a>
                     </li>
                     <li>
-                          
-                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i class="material-icons">more_vert</i></a>
+
+                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i
+                                class="material-icons">more_vert</i></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!-- <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
     <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
         <br>
-        <div class="center"> <i class="material-icons deep-purple-text text-lighten-1 large">headset</i></div>
+        <div class="center"> <i class="material-icons deep-purple-gradient-text large">headset</i></div>
         <h6 class="center">Progressive Music Player</h6>
         <br>
         <li>
@@ -57,7 +59,8 @@
                 </div>
             </div>
         </li>
-        <li class="deep-purple"><a href="#!" class="white-text"><i class="material-icons white-text">album</i>Tracks</a>
+        <li class="deep-purple-gradient"><a href="#!" class="white-text"><i
+                    class="material-icons white-text">album</i>Tracks</a>
         </li>
         <div class="collapsible">
             <li>
@@ -81,13 +84,12 @@
         <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
         <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
         <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Settings</a></li>
-        <li><a href="#!" class="white-text btn deep-purple">SIGN OUT</a></li>
+        <li><a href="#!" class="white-text btn deep-purple-gradient">SIGN OUT</a></li>
     </ul>
 
     <!-- BIG ASS HEADERS (TABS)-->
     <div class="navbar-fixed hide-on-small-only">
         <nav class="z-depth-0 tab" style="background-color: #303030">
-
             <div class="container">
                 <h4>
                     <!-- CHANGE THE ACTIVE -->
@@ -104,15 +106,11 @@
     <!-- YOUR CONTENT HERE -->
     <div class="container">
         <div class="row white-text">
-
             <div id="content" class="col s12">
                 <!-- CONTENT STARTS HERE -->
-                <a href="#" class="dropdown-trigger" id="context-menu" data-target='context-menu-dropdown'>
-                    Click Me
-                </a>
+                <a id="menux" class="waves-effect waves-light btn modal-trigger" href="#welcome-modal">Modal</a>
 
             </div>
-
         </div>
     </div>
     </div>
@@ -122,7 +120,7 @@
         style="padding-bottom: 10px;">
         <!-- PROGRESS BAR -->
         <div class="progress grey">
-            <div class="determinate purple" style="width: 70%"></div>
+            <div class="determinate" style="width: 70%"></div>
         </div>
         <!-- FOR SMALL SCREEN ONLY -->
         <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger" href="#player">
@@ -164,8 +162,6 @@
                         class="material-icons">replay</i></a>
                 <a class='dropdown-trigger btn-floating right waves-effect btn-large waves-purple transparent z-depth-0'
                     id="volume" href='#' data-target='volume-dropdown'><i class="material-icons">volume_up</i></a>
-                <!-- <a href="#!" id="volume_dropdown"
-                    class="dropdown-trigger btn-floating "></a> -->
                 <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
                         class="material-icons">shuffle</i></a>
             </div>
@@ -175,7 +171,6 @@
 
     <!-- FULLSCREEN PLAYER -->
     <div id="player" class="modal bottom-sheet grey darken-4">
-
         <header class="navbar-fixed">
             <nav class="grey darken-4">
                 <div class="nav-wrapper">
@@ -191,8 +186,6 @@
                         <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
                     </ul>
                 </div>
-
-                <!-- </div> -->
             </nav>
         </header>
         <div id="fullscreen-player" class="container">
@@ -206,8 +199,8 @@
                         <h3>Nadarang</h3>
                         <h5>Shanti Dong</h5>
                         <br>
-                        <div class="progress red lighten-3">
-                            <div class="determinate red" style="width: 70%"></div>
+                        <div class="progress grey">
+                            <div class="determinate" style="width: 70%"></div>
                         </div>
                         <span>0:00</span>
                         <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
@@ -233,13 +226,8 @@
                                     class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
                                         class="material-icons">shuffle</i></a>
                             </div>
-
                         </div>
-
-
-
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="s12 center white-text">
@@ -304,14 +292,16 @@
 
     </div>
 
+    <!-- CONTEXT MENUS -->
 
-
-    <!-- context menu for player -->
+    <!-- CONTEXT MENU FOR NAVBAR -->
     <ul id='three-dot-dropdown' class='dropdown-content black'>
         <li><a href="#!"><i class="material-icons">person</i>Account</a></li>
         <li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
         <li><a href="#!"><i class="material-icons">exit_to_app</i>Sign Out</a></li>
     </ul>
+
+    <!-- FULLSCREEN PLAYER DROPDOWN AND SUBMENU -->
     <ul id='upnext-dropdown' class='dropdown-content black'>
         <li><a href="#!"><i class="material-icons">close</i>Remove</a></li>
         <li>
@@ -322,27 +312,23 @@
         </li>
     </ul>
 
-    <!-- context menu for player -->
+    <!-- SUBMENU DROPDOWN-->
     <ul id='context-menu-dropdown-submenu' class='dropdown-content black'>
-        <!-- <li><a href="#!">one</a></li> -->
         <p class="center"><label class="center">Add to Playlist</label> </p>
-
         <li><a href="#!">Playlist 1</a></li>
         <li><a href="#!">Playlist 2</a></li>
         <li><a href="#!">Playlist 3</a></li>
     </ul>
-    <!-- Volume Dropdown -->
+
+    <!-- VOLUME DROPDOWN -->
     <ul id='volume-dropdown' class='dropdown-content black'>
-        <!-- <li><a href="#!">one</a></li> -->
         <div style="padding: 10px 20px; width: 200px;">
-            <!-- <i class="material-icons" >volume_up</i> -->
             <label for="test5">Volume</label>
             <input class="browser-default" type="range" id="test5" min="0" max="100" />
         </div>
     </ul>
 
-
-    <!-- Mobile Dropdown -->
+    <!-- MOBILE ONLY DROPDOWN -->
     <ul id='mobile-menu-dropdown' class='dropdown-content black'>
         <li><a href="#!"><i class="material-icons">replay</i>Repeat</a></li>
         <li><a href="#!"><i class="material-icons">shuffle</i>Shuffle</a></li>
@@ -354,18 +340,52 @@
         </div>
     </ul>
 
+    <!-- WELCOME MODAL -->
+    <div id="welcome-modal" class="modal rounded z-depth-1">
+        <div class="modal-content deep-purple-gradient white-text center">
+            <i class="material-icons large">headset</i>
+            <h4>Welcome to Progressive Music Player!</h4>
+            <p>The most advanced PWA music app. Get Premium to unlock all features</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn right deep-purple-gradient waves-effect"
+                onclick="$('.feature').tapTarget('open')">GET PREMIUM</a>
+            <a id="skip" class="btn-flat left waves-effect modal-close">SKIP</a>
+        </div>
+    </div>
 
-    <!-- SCRIPT -->
+  
+
+
+    <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             //DO THIS FUNCTION EVERY TIME THE APP LOADS
+            // 
             fullScreenPlayer();
 
             //INITIALIZATIONS
             $('.sidenav').sidenav();
             $('.modal').modal();
+
+
+            if (localStorage.getItem('welcome') === null) {
+                localStorage.setItem('welcome', 0);
+
+            }
+
+            if (localStorage.getItem('welcome') == 0) {
+                $('#welcome-modal').modal('open');
+            }
+
+            $('#skip').on('click', function () {
+                localStorage.setItem('welcome', 1);
+            });
+
+
+
             $('.carousel.carousel-slider').carousel({
                 fullWidth: true
             })
@@ -386,21 +406,13 @@
                 container: 'body'
             });
 
-           
-            
+
             $('#mobile-menu').dropdown({
                 alignment: 'left',
                 closeOnClick: false,
                 constrainWidth: false,
                 container: 'body'
             });
-            // $('#context-menu').dropdown({
-            //     // alignment: 'left',
-
-            //     closeOnClick: false,
-            //     constrainWidth: false,
-            //     container: 'body'
-            // });
 
             $('.upnext').dropdown({
                 closeOnClick: false,
@@ -412,52 +424,45 @@
                 alignment: 'right',
                 closeOnClick: false,
                 coverTrigger: false,
-                closeOnClick: true,
-                // constrainWidth: false,
-                // container: 'body',
-                // hover: true,
                 onCloseEnd: function () {
-                    $('.upnext').dropdown('close');
-                    // const message = ;
+                    // $('.upnext').dropdown('close');
                     M.toast({
-                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-text text-lighten-1  ">Undo</button>',
+                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-gradient-text  ">Undo</button>',
                         classes: 'rounded grey darken-4',
                         displayLength: 2500
-                        });
+                    });
                 }
             });
 
             $('#tabs-swipe-demo').tabs({
                 swipeable: true
             });
-            $('.play-btn').on('click', function(){
-              if($('.play-btn').text() == 'play_arrow'){
-                $('.play-btn').children().text('pause');
-              }
 
-              else if($('.play-btn').text() == 'pause'){
-                $('.play-btn').children().text('play_arrow');
-              }
+            //CHANGE ICONS WHEN CLICKED
+            $('.play-btn').on('click', function () {
+                if ($('.play-btn').text() == 'play_arrow') {
+                    $('.play-btn').children().text('pause');
+                } else if ($('.play-btn').text() == 'pause') {
+                    $('.play-btn').children().text('play_arrow');
+                }
             });
-            $('.star-btn').on('click', function(){
+            $('.star-btn').on('click', function () {
                 console.log($('.star-btn').text());
-              if($('.star-btn').text() == 'star_borderstar_border'){
-                $('.star-btn').children().text('star');
-                M.toast({
+                if ($('.star-btn').text() == 'star_borderstar_border') {
+                    $('.star-btn').children().text('star');
+                    M.toast({
                         html: 'Added to Favorites',
                         classes: 'rounded grey darken-4',
                         displayLength: 2500
-                        });
-              }
-
-              else if($('.star-btn').text() == 'starstar'){
-                $('.star-btn').children().text('star_border');
-                M.toast({
+                    });
+                } else if ($('.star-btn').text() == 'starstar') {
+                    $('.star-btn').children().text('star_border');
+                    M.toast({
                         html: 'Removed from Favorites',
                         classes: 'rounded grey darken-4',
                         displayLength: 2500
-                        });
-              }
+                    });
+                }
             });
 
 
@@ -476,6 +481,8 @@
                 fullScreenPlayer();
             });
 
+
+            $('.feature').tapTarget();
         });
 
         //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
@@ -487,7 +494,6 @@
             }
         }
 
-
         //NOTHING BUT FOR FAKE PROGRESS BAR
         let progress = 0;
 
@@ -495,13 +501,9 @@
             setTimeout(function () {
                 progress += 1;
                 document.querySelector('.determinate').style.width = `${progress}%`;
-                if (progress < 100) {
-                    // progress = 0;
-
-                } else if (progress >= 99) {
+                if (progress >= 99) {
                     progress = 0;
                 }
-
                 timeout();
             }, 1000);
 

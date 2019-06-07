@@ -184,7 +184,8 @@ a{
 
 
 .dropdown-content li>a:hover {
-    background-color: #673AB7  !important;
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+
     color: white !important;
 }
 .dropdown-content li>a:active {
@@ -198,7 +199,9 @@ a{
 
 
 a .material-icons:hover{
-  color: #a16bff !important;
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 /* OVERRIDE DROPDOWN CHUCHU */
@@ -207,7 +210,30 @@ a .material-icons:hover{
   overflow-y: visible !important;
 }
 
-#context-menu-dropdown-submenu {
+/* #context-menu-dropdown-submenu {
   top: -40px !important;
   left: -40px !important;
+} */
+
+.progress .determinate{
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+
+}
+
+.deep-purple-gradient-text{
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.deep-purple-gradient{
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+}
+
+.rounded{
+  border-radius: 10px;
+}
+
+
+.parallax-container{
+  background-color: rgba(0, 0, 0, 0.541);
 }
