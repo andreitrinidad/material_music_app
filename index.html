@@ -14,11 +14,7 @@
     <meta name="theme-color" content="#202020">
     <title>PWAMusic</title>
 </head>
-
-
 <body>
-
-
     <!-- NAVBAR -->
     <header class="navbar-fixed">
         <nav class="nav-extended grey darken-4">
@@ -56,6 +52,8 @@
                   </div>
         </nav>
     </header>
+
+    <!-- SIDE-NAV -->
     <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
         <br>
         <div class="center"> <i class="material-icons deep-purple-gradient-text large">headset</i></div>
@@ -97,31 +95,19 @@
         <li><a href="#!" class="white-text btn deep-purple-gradient">SIGN OUT</a></li>
     </ul>
 
-    <!-- BIG ASS HEADERS (TABS)-->
-    <div class="hide-on-small-only">
-        <nav class="z-depth-0 tab" style="background-color: #303030">
-            <div class="container">
-                <!-- <h4>
-                    CHANGE THE ACTIVE
-                    <a class="big-tab big-tab-active" href="#test-swipe-1">Tracks</a>
-                    <a class="big-tab" href="#test-swipe-2">Albums</a>
-                    <a class="big-tab" href="#test-swipe-3">Artist</a>
-                    <a class="big-tab" href="#test-swipe-4">Playlist</a>
-                </h4> -->
-           
-                
-            </div>
-        </nav>
-
-    </div>
-
-    
-
+<!-- TRACKS -->
     <div id="test-swipe-1" class="col s12 blue">tracks</div>
-    <div id="test-swipe-2" class="col s12 red"><a href="" id="menu">target</a> albums
+
+    <!-- ALBUMS -->
+    <div id="test-swipe-2" class="col s12 red">
+        <a href="" id="menu">target</a> albums
         <a class="btn next" onclick="$('#target1').tapTarget('open')">NEXT</a>
     </div>
+
+    <!-- ARTISTS -->
     <div id="test-swipe-3" class="col s12 green">artists</div>
+
+    <!-- PLAYLISTS -->
     <div id="test-swipe-4" class="col s12 green">playlist</div>
     <!-- YOUR CONTENT HERE -->
     <div class="container">
