@@ -305,6 +305,136 @@ a .material-icons:hover{
   background-color: rgba(0, 0, 0, 0.541);
 }
 
+
+/* WHAT I ADDED STARTS HERE */
+
+h6 {
+  font-weight: bold;
+} 
+
+
+/* FOR SETTINGS: SWITCHES */
+.switch label input[type=checkbox]:checked + .lever:after {
+ 
+  background-color: #a16bff;
+ 
+}
+
+
+.switch label .lever {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+.switch label .lever {
+ 
+  content: "";
+ 
+  display: inline-block;
+ 
+  position: relative;
+ 
+  width: 36px;
+ 
+  height: 14px;
+ 
+  background-color: rgba(141, 110, 99, 0.8);
+ 
+  border-radius: 15px;
+ 
+  margin-right: 10px;
+ 
+  -webkit-transition: background 0.3s ease;
+ 
+  transition: background 0.3s ease;
+ 
+  vertical-align: middle;
+ 
+  margin: 0 16px;
+ 
+}
+
+/* FOR ACCOUNT: IMAGE */
+.responsive-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.fab {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+ 
+
+/* FOR ALL HEADINGS*/
+h4 {
+ 
+  word-spacing: 15px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 1px;
+  
+}
+
+
+    /* STYLE FOR IMG ACCOUNT */
+
+    .shadow {
+      position: absolute;
+      max-width: 50%;
+      max-height: 50%;
+      top: 50%;
+      left: 50%;
+      overflow: visible;
+    }
+
+    .circle  {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      top: -50%;
+      left: -50%;
+    }
+ 
+    [type="checkbox"]:checked:not(.lever):before {
+      top: -4px;
+      left: -5px;
+      width: 12px;
+      height: 22px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid #b621fe;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+    [type="radio"]:checked:not(.lever):before {
+      top: -4px;
+      left: -5px;
+      width: 12px;
+      height: 22px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+
+    .switch label input[type=checkbox]:checked + .lever:after {
+      background-color:#b621fe #1fd1f9;
+      
 .preloader-container{
   position: absolute;
   height: 100%;
