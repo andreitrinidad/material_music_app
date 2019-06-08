@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#202020">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+            </style>
     <title>PWAMusic</title>
 </head>
 
@@ -88,12 +91,12 @@
     </ul>
 
     <!-- BIG ASS HEADERS (TABS)-->
-    <div class="navbar-fixed hide-on-small-only">
+    <!-- <div class="navbar-fixed hide-on-small-only">
         <nav class="z-depth-0 tab" style="background-color: #303030">
             <div class="container">
-                <h4>
+                <h4> -->
                     <!-- CHANGE THE ACTIVE -->
-                    <a class="big-tab big-tab-active" href="#content scrollspy">Tracks</a>
+                    <!-- <a class="big-tab big-tab-active" href="#content scrollspy">Tracks</a>
                     <span class="big-tab">Albums</span>
                     <span class="big-tab">Artist</span>
                     <span class="big-tab">Playlist</span>
@@ -101,19 +104,136 @@
             </div>
         </nav>
 
-    </div>
+    </div> -->
 
     <!-- YOUR CONTENT HERE -->
     <div class="container">
-        <div class="row white-text">
-            <div id="content" class="col s12">
-                <!-- CONTENT STARTS HERE -->
-                <a id="menux" class="waves-effect waves-light btn modal-trigger" href="#welcome-modal">Modal</a>
-
+        <div class="row">
+         <div class="col s12">
+             <br>
+            <div class="deep-purple-gradient  white-text">
+                <br>
+            <h6 class="center" style="font-weight: bold;"> SETTINGS</h6>
+            <br>
             </div>
-        </div>
+
+   <!-- Autoplay -->
+   <div class="card-panel grey darken-4 white-text">
+   
+   <div class="container">
+   <h4 class="center deep-purple-gradient-text">AUTOPLAY</h4>
+      <p>Do you want to autoplay songs?</p>
+    <div class="switch">
+      <p>
+      <label>
+           <input type="checkbox">
+           <span class="lever"></span>
+          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       Next in queue will automatically play</p>
+    </div>
+    
+   <!-- Explicit Content-->
+   <div class="">
+    <h4 class="center deep-purple-gradient-text">EXPLICIT CONTENT</h4>
+   <p>Allowing playback of all explicit content songs.</p>
+   <div class="switch">
+           <p>
+            <label>
+              <input type="checkbox">
+         
+              <span class="lever"></span>
+             </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             App will not skip any explicit content</p>
+          </div>
+          </div>
+   
+
+    <!-- STARTUP-->
+    <div class="">
+    <h4 class="center deep-purple-gradient-text">STARTUP BEHAVOIR</h4> 
+                   
+                           <p>Opening the app automatically after computer.</p>
+                           <div class="switch">
+                                   <p>
+                                    <label>
+                                      <input type="checkbox">
+                                 
+                                      <span class="lever"></span>
+                                     </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     App will open after startup</p>
+                                  </div>
+                           </div>
+
+    <!-- SOCIAL -->
+              
+               <h4 class="center deep-purple-gradient-text">SOCIAL</h4>
+               
+               <div class="switch">
+                       <p>
+                        <label>
+                          <input type="checkbox">
+                     
+                          <span class="lever"></span>
+                         </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         Make my playlist public</p>
+                      </div>
+
+               <div class="switch">
+                       <p>
+                        <label>
+                          <input type="checkbox" id="#1">
+                          <span class="lever"></span>
+                         </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         Show recently played </p>
+                      </div>
+               <div class="switch">
+                       <p>
+                        <label>
+                          <input type="checkbox" id="#1">
+                          <span class="lever"></span>
+                         </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         Private session to listen anonymously </p>
+                      </div>
+                    
+
+<!-- MUSIC QUALITY-->
+
+<h4 class="center deep-purple-gradient-text">MUSIC QUALITY</h4>
+<div class="switch">
+       <p>
+        <label>
+          <input type="checkbox">
+          <span class="lever"></span>
+         </label>&nbsp;&nbsp;&nbsp;&nbsp;
+         Normalize volume</p>
+      </div>
+      
+      <div class= "col s12 m12 l6">
+      
+      <select class="browser-default">
+        <option value="" disabled selected>Streaming Quality</option>
+        <option value="1">Automatic</option>
+        <option value="2">Normal</option>
+        <option value="3">High</option>
+        <option value="3">Very High</option>
+      </select>
+    
+</div>
+   <br>
+     <br>
+     </div> 
+
+     <br>
+     <br>
+     
+    </div>        
     </div>
     </div>
+    </div>
+    </div>
+    </div>
+    
+    
 
     <!-- BOTTOM MEDIA CONTROLS -->
     <div id="media-controls" class="bottom-fixed grey darken-4 white-text z-depth-3 waves-effect waves-purple"
@@ -369,7 +489,7 @@
             //INITIALIZATIONS
             $('.sidenav').sidenav();
             $('.modal').modal();
-
+            $('select').formSelect();
 
             if (localStorage.getItem('welcome') === null) {
                 localStorage.setItem('welcome', 0);

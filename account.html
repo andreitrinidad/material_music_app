@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+            </style>
+    <title>PWAMusic</title>
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile" class="waves-effect waves-purple">
+                    <li>
+                        <a id="menu" href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="brand-logo hide-on-small deep-purple-gradient-text"><b>PWAMUSIC</b></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
+                                width="30px"></a>
+                    </li>
+                    <li>
+
+                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i
+                                class="material-icons">more_vert</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
+        <br>
+        <div class="center"> <i class="material-icons deep-purple-gradient-text large">headset</i></div>
+        <h6 class="center">PWAMUSIC</h6>
+        <br>
+        <li>
+            <div class="row no-padding no-margin">
+                <div class="col s3 push-s1"><img class="circle responsive-img" src="img/person.png"></div>
+                <div class="col s7 push-s1 puush no-margin">
+                    Andrei Trinidad
+                </div>
+            </div>
+        </li>
+        <li class="deep-purple-gradient"><a href="#!" class="white-text"><i
+                    class="material-icons white-text">album</i>Tracks</a>
+        </li>
+        <div class="collapsible">
+            <li>
+                <div class="collapsible-header" style="padding: 0px 32px;">
+                    <ul>
+                        <li>
+                            <a href="#!" class="white-text no-padding">
+                                <i class="material-icons white-text no-padding">queue_music</i>Playlist
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="collapsible-body grey darken-2">
+                    <ul>
+                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 1</a></li>
+                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 2</a></li>
+                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 3</a></li>
+                    </ul>
+                </div>
+            </li>
+        </div>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Settings</a></li>
+        <li><a href="#!" class="white-text btn deep-purple-gradient">SIGN OUT</a></li>
+    </ul>
+
+    <!-- BIG ASS HEADERS (TABS)-->
+    <!-- <div class="navbar-fixed hide-on-small-only">
+        <nav class="z-depth-0 tab" style="background-color: #303030">
+            <div class="container">
+                <h4> -->
+                    <!-- CHANGE THE ACTIVE -->
+                    <!-- <a class="big-tab big-tab-active" href="#content scrollspy">Tracks</a>
+                    <span class="big-tab">Albums</span>
+                    <span class="big-tab">Artist</span>
+                    <span class="big-tab">Playlist</span>
+                </h4>
+            </div>
+        </nav>
+
+    </div> -->
+
+    <!-- YOUR CONTENT HERE -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="grey darken-4 white-text text-darken-3 z-depth-0">
+                    <form action="#">
+                        <br>
+                        <img class="responsive-img" src="img/person.png" id="profileImage"
+                            style="width:170px;height:175px;">
+                        </form>
+
+                    <div class="deep-purple lighten-1 white-text">
+                        <h6 class="center deep-purple-gradient"> MY ACCOUNT </h6>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- EDIT ACCOUNT-->
+
+            <div class="row">
+
+                <div class="col s12 m12 l6">
+                    <div class="card-panel grey darken-4 white-text text-darken-3 z-depth-0">
+                        <br>
+                        <h6>Edit your account</h6>
+                        <br>
+                        <br>
+                        <form>
+                            <div class="input-field">
+                                <label for="uname">Username</label>
+                                <input type="text" id="uname" name="uname">
+                            </div>
+                            <div class="input-field">
+                                <label for="pword">Confirm Password</label>
+                                <input type="text" id="pword" name="password">
+                            </div>
+                            <div class="input-field">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email">
+
+                            </div>
+            
+                            <select class="browser-default">
+                                <option value="" disabled selected>Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </form>
+                        <br>
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span>Share my registration data with PWAMUSIC's content providers for marketing
+                                        purposes.</span>
+                                </label>
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="center">
+                                    <a class="btn-large waves-effect waves-light deep-purple-gradient">CANCEL</a>
+                                    <a class="btn-large waves-effect waves-light deep-purple-gradient">SAVE CHANGES</a>
+                                </div>
+                    </div>
+                </div>
+
+                <!-- FOR PREMIUM -->
+
+                <div class="col s12 m12 l6">
+                    <div class="card-panel grey darken-4 white-text text-darken-3 z-depth-0">
+                        <br>
+                        <h6 class="center deep-purple-gradient-text">PWAMUSIC Free</h6>
+                        <br>
+                        <p class="center">You're currently using PWAMUSIC Free. With Free, you'll hear ads, and you won't be able to listen offline, or play on-demand on mobile. Upgrade to Premium anytime you like.
+                        </p>
+                        <br>
+                        <br>
+                        <div class="center">
+                            <a class="btn-large waves-effect waves-light deep-purple-gradient">UPGRADE TO PREMIUM</a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                
+                <!-- ACCOUNT EXPREIENCE -->
+                <div class="col s12 m12 l6">
+                        <div class="card-panel grey darken-4 white-text text-darken-3 z-depth-0">
+                            <br>
+                            <h6 class="deep-purple-gradient-text">Help us improve your account experience.</h6>
+                            <p>Did you find what your looking for?
+                            </p>
+                            <br>
+                            <form action="#">
+                                    <p>
+                                      <label>
+                                        <input name="group1" type="radio"/>
+                                        <span>Yes</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input name="group1" type="radio"/>
+                                        <span>No</span>
+                                      </label>
+                                    </p>
+                                    </form>
+                            <br>
+                            
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    
+
+    <!-- BOTTOM MEDIA CONTROLS -->
+    <div id="media-controls" class="bottom-fixed grey darken-4 white-text z-depth-3 waves-effect waves-purple"
+        style="padding-bottom: 10px;">
+        <!-- PROGRESS BAR -->
+        <div class="progress grey">
+            <div class="determinate" style="width: 70%"></div>
+        </div>
+        <!-- FOR SMALL SCREEN ONLY -->
+        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger" href="#player">
+            <p><span>Nadarang </span>&#x2022; Shanti Dong </p>
+        </div>
+        <!-- FOR MEDIUM AND UP -->
+        <div class="row no-margin">
+            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
+                <div class="col no-padding">
+                    <div style="width: 50px;">
+                        <img src="img/album1.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <span><b>Nadarang</b></span><br>
+                    Shanti Dong
+                </div>
+            </div>
+            <div class="col s12 m6 l4 center">
+                <a href="#!" class="star-btn btn-floating hide-on-large-only transparent z-depth-0"><i
+                        class="material-icons">star_border</i></a>
+                <span>0:00</span>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_previous</i></a>
+                <a href="#!" class="play-btn black pulse btn-floating btn-large"><i
+                        class="material-icons">play_arrow</i></a>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_next</i></a>
+                <span>3:54</span>
+                <a href="#!" class="btn-floating  waves-effect waves-purple transparent z-depth-0  hide-on-large-only"
+                    data-target='mobile-menu-dropdown' id="mobile-menu">
+                    <i class='material-icons'>more_horiz</i>
+                </a>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-and-down">
+                <a href="#!" class="star-btn btn-floating btn-large right transparent z-depth-0"><i
+                        class="material-icons">star_border</i></a>
+                <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
+                        class="material-icons">replay</i></a>
+                <a class='dropdown-trigger btn-floating right waves-effect btn-large waves-purple transparent z-depth-0'
+                    id="volume" href='#' data-target='volume-dropdown'><i class="material-icons">volume_up</i></a>
+                <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
+                        class="material-icons">shuffle</i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FULLSCREEN PLAYER -->
+    <div id="player" class="modal bottom-sheet grey darken-4">
+        <header class="navbar-fixed">
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile">
+                        <li>
+                            <a class="waves-effect  modal-close" href="#!">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="brand-logo center small-text">NOW PLAYING</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="fullscreen-player" class="container">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <img src="img/album1.jpg" class="responsive-img" alt="">
+                    </div>
+                    <div class="col s12 m6 l8 center white-text">
+                        <br>
+                        <h3>Nadarang</h3>
+                        <h5>Shanti Dong</h5>
+                        <br>
+                        <div class="progress grey">
+                            <div class="determinate" style="width: 70%"></div>
+                        </div>
+                        <span>0:00</span>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_previous</i></a>
+                        <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                                class="material-icons">play_arrow</i></a>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_next</i></a>
+                        <span>3:54</span>
+                        <br><br>
+                        <div class="row">
+                            <div class="col s3">
+                                <a href="#!"
+                                    class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                        class="material-icons">replay</i></a>
+                            </div>
+                            <div class="col s6">
+                                <label for="test5">Volume</label>
+                                <input class="browser-default" type="range" id="test5" min="0" max="100" />
+                            </div>
+                            <div class="col s3">
+                                <a href="#!"
+                                    class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                        class="material-icons">shuffle</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="s12 center white-text">
+                        <h6>UP NEXT</h6>
+                        <table>
+                            <tbody>
+                                <tr class="upnext-list">
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Materyal <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="upnext-list">
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Norem <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="upnext-list">
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Shantidong <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="upnext-list">
+                                    <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
+                                    <td>
+                                        I'm captivated <br>
+                                        <span class="smaller-text">IV of SPED</span>
+                                    </td>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTEXT MENUS -->
+
+    <!-- CONTEXT MENU FOR NAVBAR -->
+    <ul id='three-dot-dropdown' class='dropdown-content black'>
+        <li><a href="#!"><i class="material-icons">person</i>Account</a></li>
+        <li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="#!"><i class="material-icons">exit_to_app</i>Sign Out</a></li>
+    </ul>
+
+    <!-- FULLSCREEN PLAYER DROPDOWN AND SUBMENU -->
+    <ul id='upnext-dropdown' class='dropdown-content black'>
+        <li><a href="#!"><i class="material-icons">close</i>Remove</a></li>
+        <li>
+            <a id="context-menu-submenu" data-target='context-menu-dropdown-submenu'>
+                <i class="material-icons">add</i>
+                Add to Playlist
+            </a>
+        </li>
+    </ul>
+
+    <!-- SUBMENU DROPDOWN-->
+    <ul id='context-menu-dropdown-submenu' class='dropdown-content black'>
+        <p class="center"><label class="center">Add to Playlist</label> </p>
+        <li><a href="#!">Playlist 1</a></li>
+        <li><a href="#!">Playlist 2</a></li>
+        <li><a href="#!">Playlist 3</a></li>
+    </ul>
+
+    <!-- VOLUME DROPDOWN -->
+    <ul id='volume-dropdown' class='dropdown-content black'>
+        <div style="padding: 10px 20px; width: 200px;">
+            <label for="test5">Volume</label>
+            <input class="browser-default" type="range" id="test5" min="0" max="100" />
+        </div>
+    </ul>
+
+    <!-- MOBILE ONLY DROPDOWN -->
+    <ul id='mobile-menu-dropdown' class='dropdown-content black'>
+        <li><a href="#!"><i class="material-icons">replay</i>Repeat</a></li>
+        <li><a href="#!"><i class="material-icons">shuffle</i>Shuffle</a></li>
+        <!-- <p class="center smaller-text">Volume</p> -->
+        <div style="padding: 10px 20px; width: 200px;">
+            <label for="test5">Volume</label>
+            <!-- <i class="material-icons" >volume_up</i> -->
+            <input class="browser-default" type="range" id="test5" min="0" max="100" />
+        </div>
+    </ul>
+
+    <!-- WELCOME MODAL -->
+    <div id="welcome-modal" class="modal rounded z-depth-1">
+        <div class="modal-content deep-purple-gradient white-text center">
+            <i class="material-icons large">headset</i>
+            <h4>Welcome to PWAMUSIC!</h4>
+            <p>The most advanced PWA music app. Get Premium to unlock all features</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn right deep-purple-gradient waves-effect"
+                onclick="$('.feature').tapTarget('open')">GET PREMIUM</a>
+            <a id="skip" class="btn-flat left waves-effect modal-close">SKIP</a>
+        </div>
+    </div>
+
+  
+
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //DO THIS FUNCTION EVERY TIME THE APP LOADS
+            // 
+            fullScreenPlayer();
+
+            //INITIALIZATIONS
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('select').formSelect();
+            $('.fixed-action-btn').floatingActionButton();
+            if (localStorage.getItem('welcome') === null) {
+                localStorage.setItem('welcome', 0);
+
+            }
+
+            if (localStorage.getItem('welcome') == 0) {
+                $('#welcome-modal').modal('open');
+            }
+
+            $('#skip').on('click', function () {
+                localStorage.setItem('welcome', 1);
+            });
+
+
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.collapsible').collapsible();
+
+            $('#volume').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#three-dot').dropdown({
+                alignment: 'left',
+                closeOnClick: true,
+                constrainWidth: false,
+                coverTrigger: false,
+                container: 'body'
+            });
+
+
+            $('#mobile-menu').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('.upnext').dropdown({
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#context-menu-submenu').dropdown({
+                alignment: 'right',
+                closeOnClick: false,
+                coverTrigger: false,
+                onCloseEnd: function () {
+                    // $('.upnext').dropdown('close');
+                    M.toast({
+                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-gradient-text  ">Undo</button>',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+            $('#tabs-swipe-demo').tabs({
+                swipeable: true
+            });
+
+            //CHANGE ICONS WHEN CLICKED
+            $('.play-btn').on('click', function () {
+                if ($('.play-btn').text() == 'play_arrow') {
+                    $('.play-btn').children().text('pause');
+                } else if ($('.play-btn').text() == 'pause') {
+                    $('.play-btn').children().text('play_arrow');
+                }
+            });
+            $('.star-btn').on('click', function () {
+                console.log($('.star-btn').text());
+                if ($('.star-btn').text() == 'star_borderstar_border') {
+                    $('.star-btn').children().text('star');
+                    M.toast({
+                        html: 'Added to Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                } else if ($('.star-btn').text() == 'starstar') {
+                    $('.star-btn').children().text('star_border');
+                    M.toast({
+                        html: 'Removed from Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+
+            $('.upnext-list').contextmenu(function (e) {
+                // alert('Gago ba u');
+                // $('#mobile-menu-dropdown').dropdown('open');
+                $('.upnext').dropdown('open');
+                e.preventDefault();
+            })
+
+            //MAKES ALL THE DROPDOWN HOVER COLOR DEEP PURPLE
+            $(".dropdown-content>li>a").css("color", "deep-purple");
+
+            //CALLS A FUNCTION EVERYTIME THE BROWSER WINDOW IS RESIZED
+            $(window).resize(function () {
+                fullScreenPlayer();
+            });
+
+
+            $('.feature').tapTarget();
+        });
+
+        //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
+        function fullScreenPlayer() {
+            if ($(document).width() <= 600) {
+                $('#fullscreen-player').removeClass('container')
+            } else {
+                $('#fullscreen-player').addClass('container')
+            }
+        }
+
+        //NOTHING BUT FOR FAKE PROGRESS BAR
+        let progress = 0;
+
+        function timeout() {
+            setTimeout(function () {
+                progress += 1;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress >= 99) {
+                    progress = 0;
+                }
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+    </script>
+
+</body>
+
+</html>
