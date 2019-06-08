@@ -121,9 +121,7 @@ body{
 }
 
 .big-tab-active{
-  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+    color: white;
 }
 
 .no-padding{
@@ -151,41 +149,31 @@ body{
 
 /* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
 .tabs-custom{
-    /* background-color: #303030 !important; */
+    background-color: #303030 !important;
 }
 
 .tabs-custom .tab a {
-  color: rgb(138, 138, 138) !important;
+  color: #fff !important;
   /* font-size: 1.5rem !important; */
   /*Custom Text Color*/
 }
 
-.tabs .tab a:hover {
+.tabs-custom .tab a:hover {
   color: white !important;
   /*Custom Color On Hover*/
 }
 
-.tabs .tab a:focus.active {
-  color:#26a69a !important;
+.tabs-custom .tab a:focus.active {
+  /* color:#26a69a !important; */
   /*Custom Text Color While Active*/
-}
-  .tabs .tab a.active {
-    background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    font-weight: bolder;
-  }
-  
  
   /* background-color:black !important; */
   /*Custom Background Color While Active*/
-  /* background-color: #673AB7 !important; */
-  /* color: white !important;
-} */
+  background-color: #673AB7 !important;
+}
 
-.tabs .indicator {
-  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
-
+.tabs-custom .indicator {
+  background-color: #673AB7 !important;
   /*Custom Color Of Indicator*/
 }
 
@@ -249,3 +237,4 @@ a .material-icons:hover{
 .parallax-container{
   background-color: rgba(0, 0, 0, 0.541);
 }
+

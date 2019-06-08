@@ -8,52 +8,39 @@
     <!-- Compiled and minified CSS -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#202020">
-    <title>PWAMusic</title>
+    <title>Progressive Music</title>
 </head>
 
 
-<body>
+<body class="deep-purple-gradient">
 
 
     <!-- NAVBAR -->
     <header class="navbar-fixed">
-        <nav class="nav-extended grey darken-4">
+        <nav class="grey darken-4">
             <div class="nav-wrapper">
                 <!-- <div class="container">  -->
-                <ul id="nav-mobile" class="waves-effect waves-purple">
-                    <li>
-                        <a id="menu" href="#" class="waves-effect sidenav-trigger no-margin show-on-large"
-                            data-target="side-nav">
-                            <i class="material-icons">menu</i>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" class="brand-logo hide-on-small deep-purple-gradient-text"><b>PWAMUSIC</b></a>
+                        <ul id="nav-mobile" class="waves-effect waves-purple">
+                                <li>
+                                    <a id="menu" href="#" class="waves-effect sidenav-trigger no-margin show-on-large" data-target="side-nav">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                </li>
+                            </ul>
+                <a href="#" class="brand-logo hide-on-small deep-purple-gradient-text center"><b>PWAMUSIC</b></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
-                                width="30px"></a>
-                    </li>
-                    <li>
 
-                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i
-                                class="material-icons">more_vert</i></a>
-                    </li>
+                    <li><a href="#about-modal" class="waves-effect white-text waves-purple modal-trigger">About</a></li>
+                    <li><a href="#login-modal" class="waves-effect white-text waves-purple modal-trigger">Login</a></li>
+                    <li><a href="#signup-modal" class="waves-effect white-text btn-flat deep-purple-gradient  signup-trigger modal-trigger">signup</a></li>
+                    
                 </ul>
-                
             </div>
-            <div class="nav-content">
-                    <ul id="tabs-swipe-demo" class="tabs tabs-custom  grey darken-4"> 
-                            <li class="tab col s3"><a href="#test-swipe-1">Tracks</a></li>
-                            <li class="tab col s3"><a href="#test-swipe-2">Albums</a></li>
-                            <li class="tab col s3"><a class="active" href="#test-swipe-3">Artist</a></li>
-                            <li class="tab col s3"><a href="#test-swipe-4">Playlist</a></li>
-                        </ul>
-                  </div>
         </nav>
     </header>
     <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
@@ -63,256 +50,183 @@
         <br>
         <li>
             <div class="row no-padding no-margin">
-                <div class="col s3 push-s1"><img class="circle responsive-img" src="img/person.png"></div>
+                <div class="col s3 push-s1"><img class="circle responsive-img" src="img/parallax1.jpg"></div>
                 <div class="col s7 push-s1 puush no-margin">
-                    Andrei Trinidad
+                    Andrei Laya
                 </div>
             </div>
         </li>
-        <li class="deep-purple-gradient"><a href="#!" class="white-text"><i
-                    class="material-icons white-text">album</i>Tracks</a>
-        </li>
-        <div class="collapsible">
-            <li>
-                <div class="collapsible-header" style="padding: 0px 32px;">
-                    <ul>
-                        <li>
-                            <a href="#!" class="white-text no-padding">
-                                <i class="material-icons white-text no-padding">queue_music</i>Playlist
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="collapsible-body grey darken-2">
-                    <ul>
-                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 1</a></li>
-                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 2</a></li>
-                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 3</a></li>
-                    </ul>
-                </div>
-            </li>
-        </div>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Settings</a></li>
-        <li><a href="#!" class="white-text btn deep-purple-gradient">SIGN OUT</a></li>
+        <li><a href="#about-modal" class="white-text modal-trigger"><i class="material-icons white-text">account_box</i>About</a></li>
+
+      
+                    <li><a href="#login-modal" class="waves-effect white-text waves-purple modal-trigger"><i class="material-icons white-text">account_box</i>Login</a></li>
+                    <li><a href="#signup-modal" class="waves-effect white-text btn-flat deep-purple-gradient  signup-trigger modal-trigger center">signup</a></li>
+          
     </ul>
 
-    <!-- BIG ASS HEADERS (TABS)-->
-    <div class="hide-on-small-only">
-        <nav class="z-depth-0 tab" style="background-color: #303030">
-            <div class="container">
-                <!-- <h4>
-                    CHANGE THE ACTIVE
-                    <a class="big-tab big-tab-active" href="#test-swipe-1">Tracks</a>
-                    <a class="big-tab" href="#test-swipe-2">Albums</a>
-                    <a class="big-tab" href="#test-swipe-3">Artist</a>
-                    <a class="big-tab" href="#test-swipe-4">Playlist</a>
-                </h4> -->
-           
-                
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/parallax1.jpg">
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center white-text">
+                  
+                    <h2><i class="material-icons deep-purple-gradient-text large">headset</i>
+                        
+                        <br> Get Premium
+                        </h5>
+                        <p>The Music Never Stops with Premium. Play Offline, Just ₱9 for 3 Whole Months. Exclusive Podcasts. Unlimited Skips. Over 40 Million Songs. Curated Playlists. New Music Discovery..</p>
+                            <br><br>
+                        <a href="#subscribe-modal" class="btn-large deep-purple-gradient modal-trigger">subscribe now</a>
+                </div>
+
             </div>
-        </nav>
-
+        </div>
     </div>
 
-    
+    <div class="section deep-purple-gradient" id="affordable">
+        <div class="container">
+                <div class="row">
+                        <div class="col s12 m6 white-text">
+                            <h2 class="header">Unlimited Music? Premium is for you</h2>
+                            <p>Only ₱129/month after. Offer not available to users who already tried Premium. Offer ends 30 Jun 2019. Terms apply..</p>
 
-    <div id="test-swipe-1" class="col s12 blue">tracks</div>
-    <div id="test-swipe-2" class="col s12 red"><a href="" id="menu">target</a> albums
-        <a class="btn next" onclick="$('#target1').tapTarget('open')">NEXT</a>
+                            <a href="" class="btn-large deep-purple-gradient rounded">GET PREMIUM</a>
+                           
+                        </div>
+                        <div class="col s12 m4 offset-m2">
+                            <br>
+                            <div class="card-panel">
+                                <b class="deep-purple-gradient-text">FOR FIRS TIME SUBSCRIPTION</b> <br>
+                                <span style="font-size: 2rem">149</span> php/month
+                                <br> First 3 months for only ₱9* <br><br>
+                                <div class="divider"></div><br>
+                                <b class="deep-purple-gradient-text">FOR SECOND SUBSCRIPTION</b> <br>
+                                <span style="font-size: 2rem">129</span> php/month
+                                <br>5 months for only ₱7.50* <br><br>
+                                <div class="divider"></div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+        </div>
+  
     </div>
-    <div id="test-swipe-3" class="col s12 green">artists</div>
-    <div id="test-swipe-4" class="col s12 green">playlist</div>
+    <div class="parallax-container white-text center">
+        <div class="parallax"><img src="img/parallax2.jpg">
+        </div>
+        <br><br><br>
+        <h4>Listen up to thousands of music</h4>
+        <h6>Enjoy PWAMUSIC with your Friends</h6>
+    </div>
+    <!-- Premium Section  -->
+    <br><br>
+   
+        <div class="container  ">
+            <div class="row deep-purple-gradient">
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                            <i class="fa fa-user fa-3x deep-purple-text text-darken-2"></i>
+                            <h5 class="grey-text text-darken-4">Free Account</h5>
+            <p class="black-text">PWAMUSIC Offer's 1 month Free Trial, With Variety of Music From Pop music Jazz and Rap</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                        <div class="card-panel">
+                          <i class="fa fa-download fa-3x deep-purple-text text-darken-2"></i>
+                          <h5 class="grey-text text-darken-4">Free Download</h5>
+                          <p class="black-text">Upon the subscription to the service, You can select several playlist to download</p>
+                        </div>
+                      </div>
+
+                      <div class="col s12 m4">
+                            <div class="card-panel">
+                              <i class="fas fa-headphones fa-3x deep-purple-text text-darken-2"></i>
+                              <h5 class="grey-text text-darken-4">Playlist</h5>
+                              <p class="black-text">PWAMUSIC gives you the most selected album and different genre of music that matches to your mood.</p>
+                            </div>
+                          </div>
+            </div>
+        </div>
+   
+        <!-- About Developers -->
+
+        <section id="about" class="section section-about grey lighten-3 center scrollspy">
+                <div class="container">
+                        <h2>About PWAMUSIC</h2>
+                        <p class="flow-text"></p>
+                      </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <img src="img/tesdafy.jpg" alt="" class="responsive-img circle">
+                    </div>
+
+                    <div class="col s12 m5 offset-m1">
+                        <br>
+                        <ul class="collection with-header z-depth-4">
+                            <li class="collection-header">
+                                <h5>Subscription</h5>
+                            </li>
+
+                            <li class="collection-item z-depth-4">
+                                    <i class="material-icons left">check</i>
+                                    Free 1 Month Trial
+                                  </li>
+                                  <li class="collection-item">
+                                    <i class="material-icons left">check</i>
+                                    Play music anywhere
+                                  </li>
+                                  <li class="collection-item">
+                                    <i class="material-icons left">check</i>
+                                    Discover Music
+                                  </li>
+                                  <li class="collection-item">
+                                    <i class="material-icons left">check</i>
+                                    Access to podcasts and audiobooks
+                                  </li>
+                                  <li class="collection-item">
+                                    <i class="material-icons left">check</i>
+                                    No ad interruptions
+                                  </li>
+                                  <li class="collection-item">
+                                    <i class="material-icons left">check</i>
+                                    Listen without an internet connection
+                                  </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>  
+    <!-- SECTION DEVELOPERS -->
+  <div class="section section-developers white-text">
+        <div class="section deep-purple-gradient">
+          <div class="row">
+            <div class="col s12">
+              <h3 class="center">The Developerss</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel for devs with images -->
+
+      <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/person.png"></a>
+            <a class="carousel-item" href="#two!"><img src="img/john.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/mathew.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/Jake.jpg"></a>
+          </div>
+
+      
+
+
+
     <!-- YOUR CONTENT HERE -->
-    <div class="container">
-        <div class="row white-text">
-            <div id="content" class="col s12">
-                <!-- CONTENT STARTS HERE -->
-                <a id="menux" class="waves-effect waves-light btn modal-trigger" href="#welcome-modal">Modal</a>
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- BOTTOM MEDIA CONTROLS -->
-    <div id="media-controls" class="bottom-fixed grey darken-4 white-text z-depth-3 waves-effect waves-purple"
-        style="padding-bottom: 10px;">
-        <!-- PROGRESS BAR -->
-        <div class="progress grey">
-            <div class="determinate" style="width: 70%"></div>
-        </div>
-        <!-- FOR SMALL SCREEN ONLY -->
-        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger" href="#player">
-            <p><span>Nadarang </span>&#x2022; Shanti Dong </p>
-        </div>
-        <!-- FOR MEDIUM AND UP -->
-        <div class="row no-margin">
-            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
-                <div class="col no-padding">
-                    <div style="width: 50px;">
-                        <img src="img/album1.jpg" alt="" class="responsive-img">
-                    </div>
-                </div>
-                <div class="col s6">
-                    <span><b>Nadarang</b></span><br>
-                    Shanti Dong
-                </div>
-            </div>
-            <div class="col s12 m6 l4 center">
-                <a href="#!" class="star-btn btn-floating hide-on-large-only transparent z-depth-0"><i
-                        class="material-icons">star_border</i></a>
-                <span>0:00</span>
-                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
-                        class="material-icons">skip_previous</i></a>
-                <a href="#!" class="play-btn black pulse btn-floating btn-large"><i
-                        class="material-icons">play_arrow</i></a>
-                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
-                        class="material-icons">skip_next</i></a>
-                <span>3:54</span>
-                <a href="#!" class="btn-floating  waves-effect waves-purple transparent z-depth-0  hide-on-large-only"
-                    data-target='mobile-menu-dropdown' id="mobile-menu">
-                    <i class='material-icons'>more_horiz</i>
-                </a>
-            </div>
-            <div class="col s12 m6 l4 hide-on-med-and-down">
-                <a href="#!" class="star-btn btn-floating btn-large right transparent z-depth-0"><i
-                        class="material-icons">star_border</i></a>
-                <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
-                        class="material-icons">replay</i></a>
-                <a class='dropdown-trigger btn-floating right waves-effect btn-large waves-purple transparent z-depth-0'
-                    id="volume" href='#' data-target='volume-dropdown'><i class="material-icons">volume_up</i></a>
-                <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
-                        class="material-icons">shuffle</i></a>
-            </div>
-        </div>
-    </div>
 
 
-    <!-- FULLSCREEN PLAYER -->
-    <div id="player" class="modal bottom-sheet grey darken-4">
-        <header class="navbar-fixed">
-            <nav class="grey darken-4">
-                <div class="nav-wrapper">
-                    <ul id="nav-mobile">
-                        <li>
-                            <a class="waves-effect  modal-close" href="#!">
-                                <i class="material-icons">keyboard_arrow_down</i>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="#" class="brand-logo center small-text">NOW PLAYING</a>
-                    <ul id="nav-mobile" class="right">
-                        <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div id="fullscreen-player" class="container">
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col s12 m6 l4">
-                        <img src="img/album1.jpg" class="responsive-img" alt="">
-                    </div>
-                    <div class="col s12 m6 l8 center white-text">
-                        <br>
-                        <h3>Nadarang</h3>
-                        <h5>Shanti Dong</h5>
-                        <br>
-                        <div class="progress grey">
-                            <div class="determinate" style="width: 70%"></div>
-                        </div>
-                        <span>0:00</span>
-                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
-                                class="material-icons">skip_previous</i></a>
-                        <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
-                                class="material-icons">play_arrow</i></a>
-                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
-                                class="material-icons">skip_next</i></a>
-                        <span>3:54</span>
-                        <br><br>
-                        <div class="row">
-                            <div class="col s3">
-                                <a href="#!"
-                                    class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
-                                        class="material-icons">replay</i></a>
-                            </div>
-                            <div class="col s6">
-                                <label for="test5">Volume</label>
-                                <input class="browser-default" type="range" id="test5" min="0" max="100" />
-                            </div>
-                            <div class="col s3">
-                                <a href="#!"
-                                    class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
-                                        class="material-icons">shuffle</i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="s12 center white-text">
-                        <h6>UP NEXT</h6>
-                        <table>
-                            <tbody>
-                                <tr class="upnext-list">
-                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
-                                    <td>
-                                        Materyal <br>
-                                        <span class="smaller-text">Shanti Dong</span>
-                                    </td>
-                                    <td class="right"><br>
-                                        <a class="upnext" data-target='upnext-dropdown'>
-                                            <i class="material-icons grey-text text-darken-2">reorder</i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="upnext-list">
-                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
-                                    <td>
-                                        Norem <br>
-                                        <span class="smaller-text">Shanti Dong</span>
-                                    </td>
-                                    <td class="right"><br>
-                                        <a class="upnext" data-target='upnext-dropdown'>
-                                            <i class="material-icons grey-text text-darken-2">reorder</i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="upnext-list">
-                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
-                                    <td>
-                                        Shantidong <br>
-                                        <span class="smaller-text">Shanti Dong</span>
-                                    </td>
-                                    <td class="right"><br>
-                                        <a class="upnext" data-target='upnext-dropdown'>
-                                            <i class="material-icons grey-text text-darken-2">reorder</i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="upnext-list">
-                                    <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
-                                    <td>
-                                        I'm captivated <br>
-                                        <span class="smaller-text">IV of SPED</span>
-                                    </td>
-                                    <td class="right"><br>
-                                        <a class="upnext" data-target='upnext-dropdown'>
-                                            <i class="material-icons grey-text text-darken-2">reorder</i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-
-    </div>
-
-    <!-- CONTEXT MENUS -->
 
     <!-- CONTEXT MENU FOR NAVBAR -->
     <ul id='three-dot-dropdown' class='dropdown-content black'>
@@ -321,102 +235,123 @@
         <li><a href="#!"><i class="material-icons">exit_to_app</i>Sign Out</a></li>
     </ul>
 
-    <!-- FULLSCREEN PLAYER DROPDOWN AND SUBMENU -->
-    <ul id='upnext-dropdown' class='dropdown-content black'>
-        <li><a href="#!"><i class="material-icons">close</i>Remove</a></li>
-        <li>
-            <a id="context-menu-submenu" data-target='context-menu-dropdown-submenu'>
-                <i class="material-icons">add</i>
-                Add to Playlist
-            </a>
-        </li>
-    </ul>
-
-    <!-- SUBMENU DROPDOWN-->
-    <ul id='context-menu-dropdown-submenu' class='dropdown-content black'>
-        <p class="center"><label class="center">Add to Playlist</label> </p>
-        <li><a href="#!">Playlist 1</a></li>
-        <li><a href="#!">Playlist 2</a></li>
-        <li><a href="#!">Playlist 3</a></li>
-    </ul>
-
-    <!-- VOLUME DROPDOWN -->
-    <ul id='volume-dropdown' class='dropdown-content black'>
-        <div style="padding: 10px 20px; width: 200px;">
-            <label for="test5">Volume</label>
-            <input class="browser-default" type="range" id="test5" min="0" max="100" />
+    <!-- footer -->
+  <footer class="page-footer black darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Terms and conditions</h5>
+            <ul>
+                <li>Cookies</li>
+                <li>Legal</li>
+                <li>About ads</li>
+                <li>Updates</li>
+            </ul>
         </div>
-    </ul>
-
-    <!-- MOBILE ONLY DROPDOWN -->
-    <ul id='mobile-menu-dropdown' class='dropdown-content black'>
-        <li><a href="#!"><i class="material-icons">replay</i>Repeat</a></li>
-        <li><a href="#!"><i class="material-icons">shuffle</i>Shuffle</a></li>
-        <!-- <p class="center smaller-text">Volume</p> -->
-        <div style="padding: 10px 20px; width: 200px;">
-            <label for="test5">Volume</label>
-            <!-- <i class="material-icons" >volume_up</i> -->
-            <input class="browser-default" type="range" id="test5" min="0" max="100" />
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Visit our social media accounts</h5>
+          <ul>
+            <li>
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i>&nbsp; Pwamusic@yahho.com</a>
+            </li>
+            <li>
+                    <a href="https://facebook.com"><i class="fab fa-instagram"></i>&nbsp; Pwamusic.IG</a>
+            </li>
+            <li> 
+                    <a href="https://facebook.com"><i class="fab fa-twitter"></i>&nbsp; @Pwamusic</a>
+            </li>
+            <li>
+                    <a href="https://facebook.com"><i class="fab fa-youtube"></i>&nbsp; PwaMusci.channel</a>
+            </li>
+          </ul>
         </div>
-    </ul>
-
-    <!-- WELCOME MODAL -->
-    <div id="welcome-modal" class="modal rounded z-depth-1">
-        <div class="modal-content deep-purple-gradient white-text center">
-            <i class="material-icons large">headset</i>
-            <h4>Welcome to PWAMUSIC!</h4>
-            <p>The most advanced PWA music app. Get Premium to unlock all features</p>
-        </div>
-        <div class="modal-footer">
-            <a class="btn right deep-purple-gradient waves-effect" onclick="$('.feature').tapTarget('open')">GET
-                PREMIUM</a>
-            <a id="skip" class="btn-flat left waves-effect modal-close">SKIP</a>
-        </div>
+      </div>
     </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container">
+        © 2019 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 
+  <!-- modal here -->
+  <div id="login-modal" class="modal">
+      <div class="modal-content">
+          <h4>Account Login</h4>
+          <p>Login your Account to use PWAMUSIC</p>
+          <form>
+                <div class="input-field"><input type="email" id="email"><label for="email">Email</label></div>
+                <div class="input-field"><input type="password" id="password"><label for="password">Password</label></div>
+              </form>
+      </div>
+      <div class="modal-footer">
+            <a href="" class="modal-action modal-close btn grey">
+              <i class="fa fa-sync"></i> Reset Password
+            </a>
+            <a href="app.html" class="modal-action modal-close btn purple">
+              <i class="fa fa-lock"></i> Login
+            </a>
+          </div>
+        
+        </div>
 
+        <div id="signup-modal" class="modal">
+            <div class="modal-content">
+                <h4>Signup Account</h4>
+                <p>Signup use Progressive Web Music Application</p>
+                <form>
+                      <div class="input-field"><input type="text" id="email"><label for="email">Email</label></div>
+                      <div class="input-field"><input type="text" id="password"><label for="password">Password</label></div>
+                      <div class="input-field"><input type="text" id="confirm_password"><label for="confirm_password">Confirm Password</label></div>
+                      <div class="input-field"><input type="text" id="phone_number"><label for="phone_number">Phone Number</label></div>
+                    </form>
+            </div>
+            <div class="modal-footer">
+                  <a href="" class="modal-action modal-close btn grey">
+                    <i class="fa fas fa-check-circle"></i> Verify
+                  </a>
+                  <a href="" class="modal-action modal-close btn purple">
+                    <i class="fa far fas fa-user-plus"></i> Register
+                  </a>
+                </div>
+              
+              </div>
 
+              <div id="subscribe-modal" class="modal">
+                <div class="modal-content">
+                    <h3 class="center">Subscribe Now</h3>
+                    <p> ₱129* For the First subscription plus free 300mb of download</p>
+                   <form>
+                      <div class="input-field"><input type="text" id="user_name"><label for="user_name">User Name</label></div>
+                      <div class="input-field"><input type="text" id="password"><label for="password">Password</label></div>
+                      <div class="input-field"><input type="text" id="confirm_password"><label for="confirm_password">Confirm Password</label></div>
+                      <div class="input-field"><input type="text" id="phone_number"><label for="phone_number">Phone Number</label></div>
+                         <a href="" class="modal-action modal-close btn purple">
+                    <i class="fas fa-check-circle"></i> Confirm Subscription
+                  </a>
+                    </form>
+                </div>
+              </div>
 
+              <div id="about-modal" class="modal">
+                <div class="modal-content">
+                  <h3 class="center">Privacy Policy of PWAMUSIC</h3>
+                    <p>Thanks for choosing PWAMUSIC!
+
+At PWAMUSIC, we want to give you the best possible experience to ensure that you enjoy our service today, tomorrow, and in the future. To do this we need to understand your listening habits so we can deliver an exceptional and personalized service specifically for you. That said, your privacy and the security of your personal data is, <br> <br>
+
+and will always be, enormously important to us. So, we want to transparently explain how and why we gather, store, share and use your personal data - as well as outline the controls and choices you have around when and how you choose to share your personal data.
+
+That is our objective, and this Privacy Policy (“Policy”) will explain exactly what we mean in further detail below..</p>
+                </div>
+              </div>
+      
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
-            //DO THIS FUNCTION EVERY TIME THE APP LOADS
-            // 
-            fullScreenPlayer();
-
-            //INITIALIZATIONS
-            $('.sidenav').sidenav();
-            $('.modal').modal();
-
-
-            if (localStorage.getItem('welcome') === null) {
-                localStorage.setItem('welcome', 0);
-
-            }
-
-            if (localStorage.getItem('welcome') == 0) {
-                $('#welcome-modal').modal('open');
-            }
-
-            $('#skip').on('click', function () {
-                localStorage.setItem('welcome', 1);
-            });
-
-
-
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true
-            })
-            $('.collapsible').collapsible();
-
-            $('#volume').dropdown({
-                alignment: 'left',
-                closeOnClick: false,
-                constrainWidth: false,
-                container: 'body'
-            });
 
             $('#three-dot').dropdown({
                 alignment: 'left',
@@ -425,110 +360,17 @@
                 coverTrigger: false,
                 container: 'body'
             });
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.modal').modal();
+            $('.carousel').carousel();
+            $('.carousel-slider').carousel({fullwidth: true});
+            $('.scrollspy').scrollSpy();
 
-
-            $('#mobile-menu').dropdown({
-                alignment: 'left',
-                closeOnClick: false,
-                constrainWidth: false,
-                container: 'body'
-            });
-
-            $('.upnext').dropdown({
-                closeOnClick: false,
-                constrainWidth: false,
-                container: 'body'
-            });
-
-            $('#context-menu-submenu').dropdown({
-                alignment: 'right',
-                closeOnClick: false,
-                coverTrigger: false,
-                onCloseEnd: function () {
-                    // $('.upnext').dropdown('close');
-                    M.toast({
-                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-gradient-text  ">Undo</button>',
-                        classes: 'rounded grey darken-4',
-                        displayLength: 2500
-                    });
-                }
-            });
-
-            $('#tabs-swipe-demo').tabs({
-                swipeable: true
-            });
-
-            //CHANGE ICONS WHEN CLICKED
-            $('.play-btn').on('click', function () {
-                if ($('.play-btn').text() == 'play_arrow') {
-                    $('.play-btn').children().text('pause');
-                } else if ($('.play-btn').text() == 'pause') {
-                    $('.play-btn').children().text('play_arrow');
-                }
-            });
-            $('.star-btn').on('click', function () {
-                console.log($('.star-btn').text());
-                if ($('.star-btn').text() == 'star_borderstar_border') {
-                    $('.star-btn').children().text('star');
-                    M.toast({
-                        html: 'Added to Favorites',
-                        classes: 'rounded grey darken-4',
-                        displayLength: 2500
-                    });
-                } else if ($('.star-btn').text() == 'starstar') {
-                    $('.star-btn').children().text('star_border');
-                    M.toast({
-                        html: 'Removed from Favorites',
-                        classes: 'rounded grey darken-4',
-                        displayLength: 2500
-                    });
-                }
-            });
-
-
-            $('.upnext-list').contextmenu(function (e) {
-                // alert('Gago ba u');
-                // $('#mobile-menu-dropdown').dropdown('open');
-                $('.upnext').dropdown('open');
-                e.preventDefault();
-            })
-
-            //MAKES ALL THE DROPDOWN HOVER COLOR DEEP PURPLE
-            $(".dropdown-content>li>a").css("color", "deep-purple");
-
-            //CALLS A FUNCTION EVERYTIME THE BROWSER WINDOW IS RESIZED
-            $(window).resize(function () {
-                fullScreenPlayer();
-            });
-
-
-            $('.feature').tapTarget();
+           
         });
 
-        //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
-        function fullScreenPlayer() {
-            if ($(document).width() <= 600) {
-                $('#fullscreen-player').removeClass('container')
-            } else {
-                $('#fullscreen-player').addClass('container')
-            }
-        }
-
-        //NOTHING BUT FOR FAKE PROGRESS BAR
-        let progress = 0;
-
-        function timeout() {
-            setTimeout(function () {
-                progress += 1;
-                document.querySelector('.determinate').style.width = `${progress}%`;
-                if (progress >= 99) {
-                    progress = 0;
-                }
-                timeout();
-            }, 1000);
-
-        }
-        timeout();
+      
     </script>
 
 </body>
