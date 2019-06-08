@@ -187,7 +187,7 @@ body{
 }
 
 
-/* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
+
 .tabs-custom{
     /* background-color: #303030 !important; */
 }
@@ -356,12 +356,12 @@ h6 {
 }
 
 /* FOR ACCOUNT: IMAGE */
-.responsive-img {
+/* .responsive-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-}
+} */
 
 .fab {
   display: block;
@@ -372,14 +372,14 @@ h6 {
  
 
 /* FOR ALL HEADINGS*/
-h4 {
+/* h4 {
  
   word-spacing: 15px;
   font-size: 15px;
   border: 2px solid black;
   border-radius: 1px;
   
-}
+} */
 
 
     /* STYLE FOR IMG ACCOUNT */
@@ -393,13 +393,13 @@ h4 {
       overflow: visible;
     }
 
-    .circle  {
+    /* .circle  {
       position: relative;
       max-width: 100%;
       max-height: 100%;
       top: -50%;
       left: -50%;
-    }
+    } */
  
     [type="checkbox"]:checked:not(.lever):before {
       top: -4px;
@@ -434,7 +434,7 @@ h4 {
 
     .switch label input[type=checkbox]:checked + .lever:after {
       background-color:#b621fe #1fd1f9;
-      
+    }
 .preloader-container{
   position: absolute;
   height: 100%;
@@ -457,3 +457,6 @@ h4 {
     top: calc(50vh - 100px);
 }
 
+.modal{
+  z-index: 1012;
+}
