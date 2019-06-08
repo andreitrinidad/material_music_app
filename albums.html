@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <title>Progressive Music</title>
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile">
+                    <li>
+                        <a href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="brand-logo">Progressive Music</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
+                                width="30px"></a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-purple"><i class="material-icons">more_vert</i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
+        <br>
+        <div class="center"> <i class="material-icons deep-purple-text text-lighten-1 large">headset</i></div>
+        <h6 class="center">Progressive Web Player</h6>
+        <br>
+        <li>
+
+            <div class="row no-padding no-margin">
+                <div class="col s3 push-s1"><img class="circle responsive-img" src="img/person.png"></div>
+                <div class="col s7 push-s1 puush no-margin">
+                    Andrei Trinidad
+                </div>
+
+            </div>
+
+
+
+        </li>
+        <li class="deep-purple"><a href="#!" class="white-text"><i class="material-icons white-text">album</i>Tracks</a>
+        </li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">queue_music</i>Playlist</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
+        <!-- <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Artists</a></li> -->
+        <li><a href="#!" class="white-text btn deep-purple">SIGN OUT</a></li>
+
+    </ul>
+
+    <!-- BIG ASS HEADERS (TABS)-->
+    <div class="navbar-fixed hide-on-small-only">
+        <nav class="z-depth-0 tab" style="background-color: #303030">
+
+            <div class="container">
+                <h4>
+                    <!-- CHANGE THE ACTIVE -->
+                    <a class="big-tab big-tab" href="#content scrollspy">Tracks</a>
+                    <span class="big-tab-active">Albums</span>
+                    <span class="big-tab">Artist</span>
+                    <span class="big-tab">Playlist</span>
+                </h4>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <!-- YOUR CONTENT HERE -->
+    <!-- Section Albums  -->
+    <section class="section section-albums grey darken-4">
+        <div class="container">
+                <div class="input-field" style="position: absolute; left: 70%;">
+                        <i class="material-icons prefix">search</i>
+                        <input id="icon_prefix" type="search" class="validate">
+                        <label for="icon_prefix">Seach</label>
+                      </div>
+            <h3><span class="deep purple-text darken-2">Albums</span>
+            </h3>
+            <!-- CARD WITH IMAGE & FLOATING BUTTON -->
+            <div class="row">
+                <div class="col s6 m4 l3">
+                    <!-- Card 1 -->
+                    <div class="card" style="background: #004d40">
+                        <div class="card-image">
+                            <img src="img/album1.jpg" class="waves-effect waves-light modal-trigger " href="#modal1">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal1" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Shanti Dope</h5>
+                                    <p style="color: white ; text-align: center;">Shanti Dope</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album1.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Nadarang</th>
+                                                        <th>Shanti Dope</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Shanti Dope</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Shanti Dope</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 1 -->
+
+                <div class="col s6 m4 l3">
+                    <!-- Card 2 -->
+                    <div class="card" style="background: #bf360c ">
+                        <div class="card-image">
+                            <img src="img/album2.jpg" class="waves-effect waves-light modal-trigger" href="#modal2">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal2" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">CLAPCLAPCLAP!</h5>
+                                    <p style="color: white ; text-align: center;">IV Of Spades</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album2.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>CLAPCLAPCLAP</th>
+                                                        <th>IV Of Spades</th>
+                                                        <th>0:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sweet Shadow</th>
+                                                        <th>IV Of Spades</th>
+                                                        <th>4:04</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>IV Of Spades</th>
+                                                        <th>4:06</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">CLAPCLAPCLAP</h6>
+                            </span>
+                            <p style="color: #e0e0e0">IV Of Spades</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 2 -->
+
+                <div class="col s6 m4 l3">
+                    <!-- Card 3 -->
+                    <div class="card" style="background: #3e2723">
+                        <div class="card-image">
+                            <img src="img/album3.jpg" class="waves-effect waves-light modal-trigger" href="#modal3">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal3" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">WHEN WE ALL FALL ASLEEP WHERE DO WE GO
+                                    </h5>
+                                    <p style="color: white ; text-align: center;">Billie Eilish</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album3.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>bury a friend</th>
+                                                        <th>Billie Eilish</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>bad guy</th>
+                                                        <th>Billie Eilish Ft. T.I</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>Billie Eilish Ft. Khalid</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">WHEN WE FALL ALL ASLEEP WHERE DO WE GO</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Billie Eilish</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 3 -->
+
+                <div class="col s6 m4 l3">
+                    <!-- Card 4 -->
+                    <div class="card" style="background: maroon ">
+                        <div class="card-image">
+                            <img src="img/album4.jpg" class="waves-effect waves-light modal-trigger" href="#modal4">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal4" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Something To Tell You</h5>
+                                    <p style="color: white ; text-align: center;">HAIM</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album4.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Want You BAck</th>
+                                                        <th>HAIM</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Nothing's Wrong</th>
+                                                        <th>HAIM</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Little of Your Love</th>
+                                                        <th>HAIM</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Something To Tell You</h6>
+                            </span>
+                            <p style="color: white">HAIM</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 4 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 5 -->
+                    <div class="card" style="background:lightseagreen">
+                        <div class="card-image">
+                            <img src="img/album5.jpg" class="waves-effect waves-light modal-trigger" href="#modal5">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal5" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Back To Life</h5>
+                                    <p style="color: white ; text-align: center;">Russ</p>
+                                    <div class="row">
+                                        <div class="row">
+                                            <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                                style="left: 1%">
+                                                <i class="material-icons">shuffle</i></a>
+                                            <div class="col s6 m6 l6">
+                                                <img src="img/album5.jpg">
+                                            </div>
+                                            <div class="col s6 m6 l6">
+                                                <table class="highlight" style="color: white">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Track</th>
+                                                            <th>Artist</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Back To Life</th>
+                                                            <th>Russ</th>
+                                                            <th>3:25</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Back To Life</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Russ</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 5 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 6 -->
+                    <div class="card" style="background: darkblue">
+                        <div class="card-image">
+                            <img src="img/album6.jpg" class="waves-effect waves-light modal-trigger" href="#modal6">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal6" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">False Alarm</h5>
+                                    <p style="color: white ; text-align: center;">Two Door Cinema Club</p>
+                                    <div class="row">
+                                        <div class="row">
+                                            <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                                style="left: 1%">
+                                                <i class="material-icons">shuffle</i></a>
+                                            <div class="col s6 m6 l6">
+                                                <img src="img/album6.jpg">
+                                            </div>
+                                            <div class="col s6 m6 l6">
+                                                <table class="highlight" style="color: white">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Track</th>
+                                                            <th>Artist</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Once</th>
+                                                            <th>Two Door Cinema Club</th>
+                                                            <th>3:19</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Talk</th>
+                                                            <th>Two Door Cinema Club Ft. T.I</th>
+                                                            <th>4:24</th>
+                                                            <th><i class="material-icons"></i>more_vert</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Satisfaction Guaranteed</th>
+                                                            <th>Two Door Cinema Club Ft. Khalid</th>
+                                                            <th>3:48</th>
+                                                            <th><i class="material-icons"></i>more_vert</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>So Many People</th>
+                                                            <th>Two Door Cinema Club</th>
+                                                            <th>4:42</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Think</th>
+                                                            <th>Two Door Cinema Club</th>
+                                                            <th>3:52</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Nice To See You</th>
+                                                            <th>Two Door Cinema Club</th>
+                                                            <th>6:13</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Break</th>
+                                                            <th>Two Door Cinema Club</th>
+                                                            <th>2:08</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">False Alarm</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Two Door Cinema Club</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 6 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 7 -->
+                    <div class="card" style="background: lightslategray">
+                        <div class="card-image">
+                            <img src="img/album7.jpg" class="waves-effect waves-light modal-trigger" href="#modal7">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal7" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Figures</h5>
+                                    <p style="color: white ; text-align: center;">Jessie Reyez</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album7.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>bury a friend</th>
+                                                        <th>Billie Eilish</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>bad guy</th>
+                                                        <th>Billie Eilish Ft. T.I</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>Billie Eilish Ft. Khalid</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Figures</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Jessie Reyez</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 7 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 8 -->
+                    <div class="card" style="background: #ea80fc">
+                        <div class="card-image">
+                            <img src="img/album8.jpg" class="waves-effect waves-light modal-trigger" href="#modal8">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal8" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Body Was Made</h5>
+                                    <p style="color: white ; text-align: center;">Ezra Furman</p>
+                                    <div class="row">
+                                        <div class="row">
+                                            <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                                style="left: 1%">
+                                                <i class="material-icons">shuffle</i></a>
+                                            <div class="col s6 m6 l6">
+                                                <img src="img/album8.jpg">
+                                            </div>
+                                            <div class="col s6 m6 l6">
+                                                <table class="highlight" style="color: white">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Track</th>
+                                                            <th>Artist</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>bury a friend</th>
+                                                            <th>Billie Eilish</th>
+                                                            <th>3:25</th>
+                                                            <th><i class="material-icons">more_vert</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>bad guy</th>
+                                                            <th>Billie Eilish Ft. T.I</th>
+                                                            <th>4:15</th>
+                                                            <th><i class="material-icons"></i>more_vert</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>lovely</th>
+                                                            <th>Billie Eilish Ft. Khalid</th>
+                                                            <th>4:25</th>
+                                                            <th><i class="material-icons"></i>more_vert</th>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Body Was Made</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Ezra Furman</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 8 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 9 -->
+                    <div class="card" style="background: lightslategray">
+                        <div class="card-image">
+                            <img src="img/album9.jpg" class="waves-effect waves-light modal-trigger" href="#modal9">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal9" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Fredian</h5>
+                                    <p style="color: white ; text-align: center;">Daniel Caesar</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album9.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>bury a friend</th>
+                                                        <th>Billie Eilish</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>bad guy</th>
+                                                        <th>Billie Eilish Ft. T.I</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>Billie Eilish Ft. Khalid</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: #3e2723">Fredian</h6>
+                            </span>
+                            <p style="color: #3e2723">Daniel Caesar</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 9 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 10 -->
+                    <div class="card" style="background:#3e2723">
+                        <div class="card-image">
+                            <img src="img/album10.jpg" class="waves-effect waves-light modal-trigger" href="#modal10">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal10" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Parachutes</h5>
+                                    <p style="color: white ; text-align: center;">Coldplay</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album10.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>bury a friend</th>
+                                                        <th>Billie Eilish</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>bad guy</th>
+                                                        <th>Billie Eilish Ft. T.I</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>Billie Eilish Ft. Khalid</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Parachutes</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Coldplay</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 10 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 11 -->
+                    <div class="card" style="background:#3e2723">
+                        <div class="card-image">
+                            <img src="img/album11.jpg" class="waves-effect waves-light modal-trigger" href="#modal10">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal10" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Parachutes</h5>
+                                    <p style="color: white ; text-align: center;">Coldplay</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album11.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>bury a friend</th>
+                                                        <th>Billie Eilish</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>bad guy</th>
+                                                        <th>Billie Eilish Ft. T.I</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>Billie Eilish Ft. Khalid</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Parachutes</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Coldplay</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 10 -->
+                <div class="col s6 m4 l3">
+                    <!-- Card 12 -->
+                    <div class="card" style="background:#3e2723">
+                        <div class="card-image">
+                            <img src="img/album112.jpg" class="waves-effect waves-light modal-trigger" href="#modal10">
+                            <a class="btn-floating halfway-fab waves-effect waves-light brown darken-3">
+                                <i class="material-icons">play_arrow</i></a>
+                            <!-- modal trigger -->
+                            <div id="modal10" class="modal modal-fixed-footer">
+                                <!-- modal content -->
+                                <div class="modal-content" style="background: #212121">
+                                    <h5 style="color: white; text-align: center">Parachutes</h5>
+                                    <p style="color: white ; text-align: center;">Coldplay</p>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect fab waves-light brown darken-3"
+                                            style="left: 1%">
+                                            <i class="material-icons">shuffle</i></a>
+                                        <div class="col s6 m6 l6">
+                                            <img src="img/album12.jpg">
+                                        </div>
+                                        <div class="col s6 m6 l6">
+                                            <table class="highlight" style="color: white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Track</th>
+                                                        <th>Artist</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>bury a friend</th>
+                                                        <th>Billie Eilish</th>
+                                                        <th>3:25</th>
+                                                        <th><i class="material-icons">more_vert</i></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>bad guy</th>
+                                                        <th>Billie Eilish Ft. T.I</th>
+                                                        <th>4:15</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>lovely</th>
+                                                        <th>Billie Eilish Ft. Khalid</th>
+                                                        <th>4:25</th>
+                                                        <th><i class="material-icons"></i>more_vert</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal footer -->
+                                <div class="modal-footer" style="background: black">
+                                    <a href="#!"
+                                        class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card content -->
+                        <div class="card-content"
+                            style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:100px;">
+                            <span class="card-title">
+                                <h6 style="font-size: 55%; color: white">Parachutes</h6>
+                            </span>
+                            <p style="color: #e0e0e0">Coldplay</p>
+                        </div>
+                    </div>
+                </div> <!-- Closed Card 12 -->
+
+            </div> <!-- Closing row -->
+        </div>
+    </section>
+    </div>
+
+    <!-- BOTTOM MEDIA CONTROLS -->
+    <div class="bottom-fixed grey darken-4 white-text z-depth-3  waves-effect waves-purple"
+        style="padding-bottom: 10px;">
+        <!-- PROGRESS BAR -->
+        <div class="progress grey">
+            <div class="determinate purple" style="width: 70%"></div>
+        </div>
+
+        <!-- FOR SMALL SCREEN ONLY -->
+        <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger" href="#player">
+            <p><span>Nadarang </span>&#x2022; Shanti Dope</p>
+        </div>
+
+        <!-- FOR MEDIUM AND UP -->
+        <div class="row no-margin">
+            <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
+                <div class="col no-padding">
+                    <div style="width: 50px;">
+                        <img src="img/album1.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <span><b>Nadarang</b></span><br>
+                    Shanti Dong
+                </div>
+            </div>
+            <div class="col s12 m6 l4 center">
+                <span>0:00</span>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_previous</i></a>
+                <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                        class="material-icons">play_arrow</i></a>
+                <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                        class="material-icons">skip_next</i></a>
+                <span>3:54</span>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-and-down">
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                        class="material-icons">replay</i></a>
+                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                        class="material-icons">shuffle</i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FULLSCREEN PLAYER -->
+    <div id="player" class="modal bottom-sheet grey darken-4">
+        <header class="navbar-fixed">
+            <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile">
+                        <li>
+                            <a class="waves-effect  modal-close" href="#!">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="brand-logo center small-text">NOW PLAYING</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
+                    </ul>
+                </div>
+
+                <!-- </div> -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <img src="img/album1.jpg" class="responsive-img" alt="">
+                    </div>
+                    <div class="col s12 m6 l8 center white-text">
+                        <br>
+                        <h3>Nadarang</h3>
+                        <h5>Shanti Dong</h5>
+                        <br>
+                        <div class="progress red lighten-3">
+                            <div class="determinate red" style="width: 70%"></div>
+                        </div>
+                        <span>0:00</span>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_previous</i></a>
+                        <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                                class="material-icons">play_arrow</i></a>
+                        <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">skip_next</i></a>
+                        <span>3:54</span>
+
+                        <a href="#!"
+                            class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">replay</i></a>
+                        <a href="#!"
+                            class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                class="material-icons">shuffle</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="s12 center white-text">
+                        <h6>UP NEXT</h6>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Materyal <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Norem <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
+                                    <td>
+                                        Shantidong <br>
+                                        <span class="smaller-text">Shanti Dong</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
+                                    <td>
+                                        I'm captivated <br>
+                                        <span class="smaller-text">IV of SPED</span>
+                                    </td>
+                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script>
+        function timeout() {
+            setTimeout(function () {
+                progress += 1;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress < 100) {
+                    // progress = 0;
+
+                } else if (progress >= 99) {
+                    progress = 0;
+                }
+
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+        //JQUERY INITIALIZE
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.scrollspy').scrollspy();
+
+        });
+
+        //FOR PROGRESS BAR
+        let progress = 0;
+
+
+    </script>
+
+</body>
+
+</html>

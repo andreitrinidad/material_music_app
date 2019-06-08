@@ -1,5 +1,43 @@
+/* SCROLLBAR ONLY */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  /* background: #493280; */
+  background: rgb(113, 7, 167);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(170,0,255,1)
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgb(142, 79, 223);
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.212);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 /* FOR INPUT SLIDER ONLY */
-input[type=range] {
+  input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     margin: 11.65px 0;
@@ -121,7 +159,9 @@ body{
 }
 
 .big-tab-active{
-    color: white;
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .no-padding{
@@ -149,32 +189,50 @@ body{
 
 /* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
 .tabs-custom{
-    background-color: #303030 !important;
+    /* background-color: #303030 !important; */
 }
 
 .tabs-custom .tab a {
-  color: #fff !important;
+  color: rgb(138, 138, 138) !important;
   /* font-size: 1.5rem !important; */
   /*Custom Text Color*/
 }
 
-.tabs-custom .tab a:hover {
+.tabs .tab a:hover {
   color: white !important;
   /*Custom Color On Hover*/
 }
 
-.tabs-custom .tab a:focus.active {
-  /* color:#26a69a !important; */
+.tabs .tab a:focus.active {
+  color:#26a69a !important;
   /*Custom Text Color While Active*/
+}
+  .tabs .tab a.active {
+    background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: bolder;
+  }
+  
  
   /* background-color:black !important; */
   /*Custom Background Color While Active*/
-  background-color: #673AB7 !important;
+  /* background-color: #673AB7 !important; */
+  /* color: white !important;
+} */
+
+.tabs .indicator {
+  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
+
+  /*Custom Color Of Indicator*/
 }
 
-.tabs-custom .indicator {
-  background-color: #673AB7 !important;
-  /*Custom Color Of Indicator*/
+.tabs-content{
+  background-color: #303030 !important;
+  min-height: auto !important;
+  margin-top: 50px !important;
+  height: calc(100% + 200px) !important;
+  /* padding-bottom: 200px !important; */
 }
 
 /* PARA DI MASELECT YUNG TEXT */
@@ -233,6 +291,15 @@ a .material-icons:hover{
   border-radius: 10px;
 }
 
+.spinner-blue{
+  border-color: rgba(170,0,255,1);
+}
+.spinner-red{
+  border-color: rgba(0,212,255,1);
+}
+.spinner-yellow{
+  border-color: rgba(170,0,255,1);
+}
 
 .parallax-container{
   background-color: rgba(0, 0, 0, 0.541);
@@ -368,5 +435,25 @@ h4 {
     .switch label input[type=checkbox]:checked + .lever:after {
       background-color:#b621fe #1fd1f9;
       
+.preloader-container{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: #303030; 
+   z-index: 1011;
+
+ }  
+
+.loader{
+    position: relative;
+    top: calc(100vh - 200px) ;
+    left: calc(50% - 40px) ;
+    z-index: 1010;
+}
+
+.preloader-logo{
+  position: relative;
+  left: calc(50% - 36px);
+    top: calc(50vh - 100px);
 }
 
