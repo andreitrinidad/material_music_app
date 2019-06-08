@@ -1,3 +1,41 @@
+/* SCROLLBAR ONLY */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  /* background: #493280; */
+  background: rgb(113, 7, 167);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(170,0,255,1)
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgb(142, 79, 223);
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.212);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 /* FOR INPUT SLIDER ONLY */
   input[type=range] {
     -webkit-appearance: none;
@@ -121,9 +159,7 @@ body{
 }
 
 .big-tab-active{
-  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+    color: white;
 }
 
 .no-padding{
@@ -149,43 +185,33 @@ body{
 }
 
 
-/* The best way to add custom CSS to Materialize 1.0.0 default tabs is the following: */
+
 .tabs-custom{
-    /* background-color: #303030 !important; */
+    background-color: #303030 !important;
 }
 
 .tabs-custom .tab a {
-  color: rgb(138, 138, 138) !important;
+  color: #fff !important;
   /* font-size: 1.5rem !important; */
   /*Custom Text Color*/
 }
 
-.tabs .tab a:hover {
+.tabs-custom .tab a:hover {
   color: white !important;
   /*Custom Color On Hover*/
 }
 
-.tabs .tab a:focus.active {
-  color:#26a69a !important;
+.tabs-custom .tab a:focus.active {
+  /* color:#26a69a !important; */
   /*Custom Text Color While Active*/
-}
-  .tabs .tab a.active {
-    background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    font-weight: bolder;
-  }
-  
  
   /* background-color:black !important; */
   /*Custom Background Color While Active*/
-  /* background-color: #673AB7 !important; */
-  /* color: white !important;
-} */
+  background-color: #673AB7 !important;
+}
 
-.tabs .indicator {
-  background: linear-gradient(90deg, rgba(170,0,255,1) 0%, rgba(0,212,255,1) 100%) !important;
-
+.tabs-custom .indicator {
+  background-color: #673AB7 !important;
   /*Custom Color Of Indicator*/
 }
 
@@ -193,7 +219,7 @@ body{
   background-color: #303030 !important;
   min-height: auto !important;
   margin-top: 50px !important;
-  height: calc(100% + 500px) !important;
+  height: calc(100% + 200px) !important;
   /* padding-bottom: 200px !important; */
 }
 
@@ -253,8 +279,172 @@ a .material-icons:hover{
   border-radius: 10px;
 }
 
+.spinner-blue{
+  border-color: rgba(170,0,255,1);
+}
+.spinner-red{
+  border-color: rgba(0,212,255,1);
+}
+.spinner-yellow{
+  border-color: rgba(170,0,255,1);
+}
 
 .parallax-container{
   background-color: rgba(0, 0, 0, 0.541);
 }
 
+
+/* WHAT I ADDED STARTS HERE */
+
+h6 {
+  font-weight: bold;
+} 
+
+
+/* FOR SETTINGS: SWITCHES */
+.switch label input[type=checkbox]:checked + .lever:after {
+ 
+  background-color: #a16bff;
+ 
+}
+
+
+.switch label .lever {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+.switch label .lever {
+ 
+  content: "";
+ 
+  display: inline-block;
+ 
+  position: relative;
+ 
+  width: 36px;
+ 
+  height: 14px;
+ 
+  background-color: rgba(141, 110, 99, 0.8);
+ 
+  border-radius: 15px;
+ 
+  margin-right: 10px;
+ 
+  -webkit-transition: background 0.3s ease;
+ 
+  transition: background 0.3s ease;
+ 
+  vertical-align: middle;
+ 
+  margin: 0 16px;
+ 
+}
+
+/* FOR ACCOUNT: IMAGE */
+/* .responsive-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+} */
+
+.fab {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+ 
+
+/* FOR ALL HEADINGS*/
+/* h4 {
+ 
+  word-spacing: 15px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 1px;
+  
+} */
+
+
+    /* STYLE FOR IMG ACCOUNT */
+
+    .shadow {
+      position: absolute;
+      max-width: 50%;
+      max-height: 50%;
+      top: 50%;
+      left: 50%;
+      overflow: visible;
+    }
+
+    /* .circle  {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      top: -50%;
+      left: -50%;
+    } */
+ 
+    [type="checkbox"]:checked:not(.lever):before {
+      top: -4px;
+      left: -5px;
+      width: 12px;
+      height: 22px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid #b621fe;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+    [type="radio"]:checked:not(.lever):before {
+      top: -4px;
+      left: -5px;
+      width: 12px;
+      height: 22px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+
+    .switch label input[type=checkbox]:checked + .lever:after {
+      background-color:#b621fe #1fd1f9;
+    }
+.preloader-container{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: #303030; 
+   z-index: 1011;
+
+ }  
+
+.loader{
+    position: relative;
+    top: calc(100vh - 200px) ;
+    left: calc(50% - 40px) ;
+    z-index: 1010;
+}
+
+.preloader-logo{
+  position: relative;
+  left: calc(50% - 36px);
+    top: calc(50vh - 100px);
+}
+
+.modal{
+  z-index: 1012;
+}

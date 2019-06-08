@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- NIGHTLY BUILD -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <title>PWAMusic</title>
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div class="preloader-container">
+        <div class="preloader-logo"><i class="material-icons deep-purple-gradient-text large">headset</i></div> -->
+        <!-- <i class="material-icons large">headset</i> -->
+        <div class="loader preloader-wrapper active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="nav-extended grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile" class="waves-effect waves-purple">
+                    <li>
+                        <a id="menu" href="app.html" class="waves-effect sidenav-trigger no-margin show-on-large"
+                           >
+                            <i class="material-icons">keyboard_backspace</i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="brand-logo hide-on-small white-text"><b>Settings</b></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="account.html" class="waves-effect waves-purple"><img src="img/person.png" alt=""
+                                class="circle avatar" width="30px"></a>
+                    </li>
+                    <li>
+
+                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i
+                                class="material-icons">more_vert</i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- YOUR CONTENT HERE -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <br>
+                <div class="deep-purple-gradient  white-text">
+                    <br>
+                    <h6 class="center" style="font-weight: bold;"> YOUR SETTINGS</h6>
+                    <br>
+                </div>
+
+                <!-- Autoplay -->
+                <div class="card-panel grey darken-4 white-text">
+
+                    <div class="container">
+                        <h6 class="center deep-purple-gradient-text">AUTOPLAY</h6>
+                        <p>Do you want to autoplay songs?</p>
+                        <div class="switch">
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Next in queue will automatically play</p>
+                        </div>
+
+                        <!-- Explicit Content-->
+                        <div class="">
+                            <h6 class="center deep-purple-gradient-text">EXPLICIT CONTENT</h6>
+                            <p>Allowing playback of all explicit content songs.</p>
+                            <div class="switch">
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+
+                                        <span class="lever"></span>
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    App will not skip any explicit content</p>
+                            </div>
+                        </div>
+
+
+                        <!-- STARTUP-->
+                        <div class="">
+                            <h6 class="center deep-purple-gradient-text">STARTUP BEHAVOIR</h6>
+
+                            <p>Opening the app automatically after computer.</p>
+                            <div class="switch">
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+
+                                        <span class="lever"></span>
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    App will open after startup</p>
+                            </div>
+                        </div>
+
+                        <!-- SOCIAL -->
+
+                        <h6 class="center deep-purple-gradient-text">SOCIAL</h6>
+
+                        <div class="switch">
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+
+                                    <span class="lever"></span>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Make my playlist public</p>
+                        </div>
+
+                        <div class="switch">
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="#1">
+                                    <span class="lever"></span>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Show recently played </p>
+                        </div>
+                        <div class="switch">
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="#1">
+                                    <span class="lever"></span>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Private session to listen anonymously </p>
+                        </div>
+
+
+                        <!-- MUSIC QUALITY-->
+
+                        <h6 class="center deep-purple-gradient-text">MUSIC QUALITY</h6>
+                        <div class="switch">
+                            <p>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                Normalize volume</p>
+                        </div>
+
+                        <div class="col s12 m12 l6">
+
+                            <select class="browser-default">
+                                <option value="" disabled selected>Streaming Quality</option>
+                                <option value="1">Automatic</option>
+                                <option value="2">Normal</option>
+                                <option value="3">High</option>
+                                <option value="3">Very High</option>
+                            </select>
+
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- CONTEXT MENUS -->
+
+    <!-- CONTEXT MENU FOR NAVBAR -->
+    <ul id='three-dot-dropdown' class='dropdown-content black'>
+        <li><a href="account.html"><i class="material-icons">person</i>Account</a></li>
+        <li><a href="settings.html"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="index.html"><i class="material-icons">exit_to_app</i>Sign Out</a></li>
+    </ul>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //DO THIS FUNCTION EVERY TIME THE APP LOADS
+            // 
+            fullScreenPlayer();
+
+            //INITIALIZATIONS
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+
+
+            if (localStorage.getItem('welcome') === null) {
+                localStorage.setItem('welcome', 0);
+
+            }
+
+            if (localStorage.getItem('welcome') == 0) {
+                $('#welcome-modal').modal('open');
+            }
+
+            $('#skip').on('click', function () {
+                localStorage.setItem('welcome', 1);
+            });
+
+
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.collapsible').collapsible();
+
+            $('#volume').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#three-dot').dropdown({
+                alignment: 'left',
+                closeOnClick: true,
+                constrainWidth: false,
+                coverTrigger: false,
+                container: 'body'
+            });
+
+
+            $('#mobile-menu').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('.upnext').dropdown({
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#context-menu-submenu').dropdown({
+                alignment: 'right',
+                closeOnClick: false,
+                coverTrigger: false,
+                onCloseEnd: function () {
+                    // $('.upnext').dropdown('close');
+                    M.toast({
+                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-gradient-text  ">Undo</button>',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+            $('#tabs-swipe-demo').tabs({
+                swipeable: true
+            });
+
+            //CHANGE ICONS WHEN CLICKED
+            $('.play-btn').on('click', function () {
+                if ($('.play-btn').text() == 'play_arrow') {
+                    $('.play-btn').children().text('pause');
+                } else if ($('.play-btn').text() == 'pause') {
+                    $('.play-btn').children().text('play_arrow');
+                }
+            });
+            $('.star-btn').on('click', function () {
+                console.log($('.star-btn').text());
+                if ($('.star-btn').text() == 'star_borderstar_border') {
+                    $('.star-btn').children().text('star');
+                    M.toast({
+                        html: 'Added to Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                } else if ($('.star-btn').text() == 'starstar') {
+                    $('.star-btn').children().text('star_border');
+                    M.toast({
+                        html: 'Removed from Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+
+            $('.upnext-list').contextmenu(function (e) {
+                // alert('Gago ba u');
+                // $('#mobile-menu-dropdown').dropdown('open');
+                $('.upnext').dropdown('open');
+                e.preventDefault();
+            })
+
+            //MAKES ALL THE DROPDOWN HOVER COLOR DEEP PURPLE
+            $(".dropdown-content>li>a").css("color", "deep-purple");
+
+            //CALLS A FUNCTION EVERYTIME THE BROWSER WINDOW IS RESIZED
+            $(window).resize(function () {
+                fullScreenPlayer();
+            });
+
+
+            $('.feature').tapTarget();
+
+            $('#side-nav').on('click', highlightSidenav);
+
+            function highlightSidenav(e) {
+                console.log(e.target)
+            }
+            setTimeout(function () {
+                $('.preloader-container').fadeOut();
+            }, 1000);
+
+
+        });
+
+        //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
+        function fullScreenPlayer() {
+            if ($(document).width() <= 600) {
+                $('#fullscreen-player').removeClass('container')
+            } else {
+                $('#fullscreen-player').addClass('container')
+            }
+        }
+
+        //NOTHING BUT FOR FAKE PROGRESS BAR
+        let progress = 0;
+
+        function timeout() {
+            setTimeout(function () {
+                progress += 1;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress >= 99) {
+                    progress = 0;
+                }
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+    </script>
+
+</body>
+
+</html>

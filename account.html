@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- NIGHTLY BUILD -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#202020">
+    <title>PWAMusic</title>
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div class="preloader-container">
+        <div class="preloader-logo"><i class="material-icons deep-purple-gradient-text large">headset</i></div> -->
+        <!-- <i class="material-icons large">headset</i> -->
+        <div class="loader preloader-wrapper active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR -->
+    <header class="navbar-fixed">
+        <nav class="nav-extended grey darken-4">
+            <div class="nav-wrapper">
+                <!-- <div class="container">  -->
+                <ul id="nav-mobile" class="waves-effect waves-purple">
+                    <li>
+                        <a id="menu" href="app.html" class="waves-effect sidenav-trigger no-margin show-on-large"
+                           >
+                            <i class="material-icons">keyboard_backspace</i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="brand-logo hide-on-small white-text"><b>Account</b></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="account.html" class="waves-effect waves-purple"><img src="img/person.png" alt=""
+                                class="circle avatar" width="30px"></a>
+                    </li>
+                    <li>
+
+                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i
+                                class="material-icons">more_vert</i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+     <!-- YOUR CONTENT HERE -->
+     <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                        <div class="deep-purple-gradient  white-text">
+                                <br>
+                                <h6 class="center" style="font-weight: bold;"> ACCOUNT SETTINGS</h6>
+                                <br>
+                            </div>
+                    <div class="grey darken-4 white-text text-darken-3 z-depth-0">
+                        <form action="#">
+                            <br>
+                            <center>
+                            <img class="responsive-img circle" src="img/person.png" id="profileImage"
+                                style="width:170px;height:175px;">
+                            </center>
+                            </form>
+                        
+                        <div class="">
+                            <h6 class="center deep-purple-gradient-text" style="padding-bottom: 20px;"> Andrei Trinidad </h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- EDIT ACCOUNT-->
+    
+                <div class="row">
+    
+                    <div class="col s12 m12 l6">
+                        <div class="card-panel grey darken-4 white-text text-darken-3 z-depth-0">
+                            <br>
+                            <h6>Edit your account</h6>
+                            <br>
+                            <br>
+                            <form>
+                                <div class="input-field">
+                                    <label for="uname">Username</label>
+                                    <input type="text" id="uname" name="uname">
+                                </div>
+                                <div class="input-field">
+                                    <label for="pword">Confirm Password</label>
+                                    <input type="text" id="pword" name="password">
+                                </div>
+                                <div class="input-field">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email">
+    
+                                </div>
+                
+                                <select class="browser-default">
+                                    <option value="" disabled selected>Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </form>
+                            <br>
+                            <form action="#">
+                                <p>
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Share my registration data with PWAMUSIC's content providers for marketing
+                                            purposes.</span>
+                                    </label>
+                                </p>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="center">
+                                        <a class="btn-large waves-effect waves-light deep-purple-gradient">CANCEL</a>
+                                        <a class="btn-large waves-effect waves-light deep-purple-gradient">SAVE CHANGES</a>
+                                    </div>
+                        </div>
+                    </div>
+    
+                    <!-- FOR PREMIUM -->
+    
+                    <div class="col s12 m12 l6">
+                        <div class="card-panel grey darken-4 white-text text-darken-3 z-depth-0">
+                            <br>
+                            <h6 class="center deep-purple-gradient-text">PWAMUSIC Free</h6>
+                            <br>
+                            <p class="center">You're currently using PWAMUSIC Free. With Free, you'll hear ads, and you won't be able to listen offline, or play on-demand on mobile. Upgrade to Premium anytime you like.
+                            </p>
+                            <br>
+                            <br>
+                            <div class="center">
+                                <a class="btn-large waves-effect waves-light deep-purple-gradient">UPGRADE TO PREMIUM</a>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    
+                    <!-- ACCOUNT EXPREIENCE -->
+                    <div class="col s12 m12 l6">
+                            <div class="card-panel grey darken-4 white-text text-darken-3 z-depth-0">
+                                <br>
+                                <h6 class="deep-purple-gradient-text">Help us improve your account experience.</h6>
+                                <p>Did you find what your looking for?
+                                </p>
+                                <br>
+                                <form action="#">
+                                        <p>
+                                          <label>
+                                            <input name="group1" type="radio"/>
+                                            <span>Yes</span>
+                                          </label>
+                                        </p>
+                                        <p>
+                                          <label>
+                                            <input name="group1" type="radio"/>
+                                            <span>No</span>
+                                          </label>
+                                        </p>
+                                        </form>
+                                <br>
+                                
+                            </div>
+                        </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- CONTEXT MENUS -->
+
+    <!-- CONTEXT MENU FOR NAVBAR -->
+    <ul id='three-dot-dropdown' class='dropdown-content black'>
+        <li><a href="account.html"><i class="material-icons">person</i>Account</a></li>
+        <li><a href="settings.html"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="index.html"><i class="material-icons">exit_to_app</i>Sign Out</a></li>
+    </ul>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //DO THIS FUNCTION EVERY TIME THE APP LOADS
+            // 
+            fullScreenPlayer();
+
+            //INITIALIZATIONS
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+
+
+            if (localStorage.getItem('welcome') === null) {
+                localStorage.setItem('welcome', 0);
+
+            }
+
+            if (localStorage.getItem('welcome') == 0) {
+                $('#welcome-modal').modal('open');
+            }
+
+            $('#skip').on('click', function () {
+                localStorage.setItem('welcome', 1);
+            });
+
+
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.collapsible').collapsible();
+
+            $('#volume').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#three-dot').dropdown({
+                alignment: 'left',
+                closeOnClick: true,
+                constrainWidth: false,
+                coverTrigger: false,
+                container: 'body'
+            });
+
+
+            $('#mobile-menu').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('.upnext').dropdown({
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#context-menu-submenu').dropdown({
+                alignment: 'right',
+                closeOnClick: false,
+                coverTrigger: false,
+                onCloseEnd: function () {
+                    // $('.upnext').dropdown('close');
+                    M.toast({
+                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-gradient-text  ">Undo</button>',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+            $('#tabs-swipe-demo').tabs({
+                swipeable: true
+            });
+
+            //CHANGE ICONS WHEN CLICKED
+            $('.play-btn').on('click', function () {
+                if ($('.play-btn').text() == 'play_arrow') {
+                    $('.play-btn').children().text('pause');
+                } else if ($('.play-btn').text() == 'pause') {
+                    $('.play-btn').children().text('play_arrow');
+                }
+            });
+            $('.star-btn').on('click', function () {
+                console.log($('.star-btn').text());
+                if ($('.star-btn').text() == 'star_borderstar_border') {
+                    $('.star-btn').children().text('star');
+                    M.toast({
+                        html: 'Added to Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                } else if ($('.star-btn').text() == 'starstar') {
+                    $('.star-btn').children().text('star_border');
+                    M.toast({
+                        html: 'Removed from Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+
+            $('.upnext-list').contextmenu(function (e) {
+                // alert('Gago ba u');
+                // $('#mobile-menu-dropdown').dropdown('open');
+                $('.upnext').dropdown('open');
+                e.preventDefault();
+            })
+
+            //MAKES ALL THE DROPDOWN HOVER COLOR DEEP PURPLE
+            $(".dropdown-content>li>a").css("color", "deep-purple");
+
+            //CALLS A FUNCTION EVERYTIME THE BROWSER WINDOW IS RESIZED
+            $(window).resize(function () {
+                fullScreenPlayer();
+            });
+
+
+            $('.feature').tapTarget();
+
+            $('#side-nav').on('click', highlightSidenav);
+
+            function highlightSidenav(e) {
+                console.log(e.target)
+            }
+            setTimeout(function () {
+                $('.preloader-container').fadeOut();
+            }, 1000);
+
+
+        });
+
+        //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
+        function fullScreenPlayer() {
+            if ($(document).width() <= 600) {
+                $('#fullscreen-player').removeClass('container')
+            } else {
+                $('#fullscreen-player').addClass('container')
+            }
+        }
+
+        //NOTHING BUT FOR FAKE PROGRESS BAR
+        let progress = 0;
+
+        function timeout() {
+            setTimeout(function () {
+                progress += 1;
+                document.querySelector('.determinate').style.width = `${progress}%`;
+                if (progress >= 99) {
+                    progress = 0;
+                }
+                timeout();
+            }, 1000);
+
+        }
+        timeout();
+    </script>
+
+</body>
+
+</html>
