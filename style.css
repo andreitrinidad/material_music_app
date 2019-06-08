@@ -142,7 +142,7 @@
 
 body{
     background-color: #303030;
-    height: 1000px;
+    /* height: 1000px; */
     font-family: Roboto !important;
 }
 
@@ -441,6 +441,7 @@ h6 {
 
 .preloader-logo{
   position: relative;
+  width: 100px;
   left: calc(50% - 36px);
     top: calc(50vh - 100px);
 }

@@ -1,417 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- NIGHTLY BUILD -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#202020">
-    <title>Progressive Music</title>
+    <title>PWAMusic</title>
 </head>
 
-
 <body>
+    <!-- PRELOADER -->
+    <div class="preloader-container">
+        <div class="preloader-logo"><i class="material-icons deep-purple-gradient-text large">headset</i></div> -->
+        <!-- <i class="material-icons large">headset</i> -->
+        <div class="loader preloader-wrapper active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!-- NAVBAR -->
     <header class="navbar-fixed">
-        <nav class="grey darken-4">
+        <nav class="nav-extended grey darken-4">
             <div class="nav-wrapper">
                 <!-- <div class="container">  -->
-                <ul id="nav-mobile">
+                <ul id="nav-mobile" class="waves-effect waves-purple">
                     <li>
-                        <a href="#" class="waves-effect sidenav-trigger show-on-large" data-target="side-nav">
+                        <a id="menu" href="#" class="waves-effect sidenav-trigger no-margin show-on-large"
+                            data-target="side-nav">
                             <i class="material-icons">menu</i>
                         </a>
                     </li>
                 </ul>
-
-                <a href="#" class="brand-logo">Progressive Music</a>
+                <a href="#" class="brand-logo hide-on-small deep-purple-gradient-text"><b>PWAMUSIC</b></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <a class="waves-effect waves-purple"><img src="img/person.png" alt="" class="circle avatar"
-                                width="30px"></a>
+                        <a href="account.html" class="waves-effect waves-purple"><img src="img/person.png" alt=""
+                                class="circle avatar" width="30px"></a>
                     </li>
                     <li>
-                        <a class="waves-effect waves-purple"><i class="material-icons">more_vert</i></a>
-                    </li>
 
+                        <a class="waves-effect waves-purple" id="three-dot" data-target='three-dot-dropdown'><i
+                                class="material-icons">more_vert</i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="nav-content ">
+                <ul class="tabs-custom tabs grey darken-4">
+                    <li class="tab"><a  href="tracks.html">Tracks</a></li>
+                    <li class="tab"><a href="playlist.html">Playlist</a></li>
+                    <li class="tab"><a href="albums.html">Albums</a></li>
+                    <li class="tab"><a class="active" href="artists.html">Artists</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!-- <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+    <!-- SIDE-NAV -->
     <ul id="side-nav" class="sidenav grey darken-3 fixed white-text">
         <br>
-        <div class="center"> <i class="material-icons deep-purple-text text-lighten-1 large">headset</i></div>
-        <h6 class="center">Progressive Web Player</h6>
+        <div class="center"> <i class="material-icons deep-purple-gradient-text large">headset</i></div>
+        <h6 class="center">PWAMUSIC</h6>
         <br>
         <li>
-
             <div class="row no-padding no-margin">
                 <div class="col s3 push-s1"><img class="circle responsive-img" src="img/person.png"></div>
                 <div class="col s7 push-s1 puush no-margin">
                     Andrei Trinidad
                 </div>
             </div>
-
-
-
         </li>
-        <li class="deep-purple"><a href="#tracks.html" class="white-text"><i
-                    class="material-icons white-text">album</i>Tracks</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">queue_music</i>Playlist</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
-        <!-- <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Artists</a></li> -->
-        <li><a href="#!" class="white-text btn deep-purple">SIGN OUT</a></li>
+        <li><a href="tracks.html" class="white-text"><i
+                    class="material-icons white-text">album</i>Tracks</a>
+        </li>
+        <div class="collapsible">
+            <li>
+                <div class="collapsible-header" style="padding: 0px 32px;">
+                    <ul>
+                        <li>
+                            <a href="#!" class="white-text no-padding">
+                                <i class="material-icons white-text no-padding">queue_music</i>Playlist
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="collapsible-body grey darken-2">
+                    <ul>
+                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 1</a></li>
+                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 2</a></li>
+                        <li><a href="#!" class="white-text" style="padding-left: 87.9px;">Playlist 3</a></li>
+                    </ul>
+                </div>
+            </li>
+        </div>
+        <li>
+            <a href="albums.html" class="white-text">
+                <i class="material-icons white-text">library_music</i>Albums
+            </a>
+        </li>
+        <li class="deep-purple-gradient"><a href="artists.html" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a>
+        </li>
+        <li><a href="settings.html" class="white-text"><i class="material-icons white-text">settings</i>Settings</a>
+        </li>
+        <li><a href="index.html" class="white-text btn deep-purple-gradient">SIGN OUT</a></li>
     </ul>
-    <!-- BIG ASS HEADERS (TABS)-->
-    <div class="navbar-fixed hide-on-small-only">
-        <nav class="z-depth-0 tab" style="background-color: #303030">
 
-            <div class="container">
-                <h4>
-                    <!-- CHANGE THE ACTIVE -->
-                    <a class="big-tab big-tab" href="#content scrollspy">Tracks</a>
-                    <span class="big-tab">Albums</span>
-                    <span class="big-tab-active">Artist</span>
-                    <span class="big-tab">Playlist</span>
-                </h4>
-            </div>
-        </nav>
+    <!-- YOUR CONTENT STARTS HERE -->
+    <!-- DON'T REMOVE THE CONTAINER OR IF YOU HAVE SOME PLANS GO AHEAD FOLLOW YOUR HEART -->
+    <div class="container white-text" style="padding: 50px 0 150px;">
+
+        <!-- Header: CHANGE THIS -->
+        <h5 class="white-text">
+            Artists
+            <!-- Sample button if you have one -->
+            <a class="white-text right"><i class="material-icons">person</i></a>
+        </h5>
+
+        <!-- Content really starts here -->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aut dignissimos dolores ipsa deleniti ab
+        consectetur dicta reprehenderit eum error cumque id tenetur sed, nobis magni. Aut vero doloremque eaque!
+
     </div>
-    <!-- YOUR CONTENT HERE -->
-    <!-- Section Artists  -->
-    <section class="section section-artists grey darken-4">
-        <div class="container">
-            <div class="input-field" style="position: absolute; left: 70%;">
-                <i class="material-icons prefix">search</i>
-                <input id="icon_prefix" type="search" class="validate">
-                <label for="icon_prefix">Seach</label>
-            </div>
-            <!-- <div class="Input-field" style="position: absolute;  left:70%;">
-               <i class="material-icons">search</i>
-                    <input type="search" placeholder="Search..." style="color: white" required>
-                    <label for=""></label>
-                </div> -->
-            <h3><span class="deep purple-text darken-2">Artists</span></h3>
 
-            <!-- CARD WITH IMAGE -->
-            <div class="row">
-                <div class="col s6 m4 l3">
-                    <!-- Image 1 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist1.jpg"
-                        href="#modal1" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal1" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Shanti Dope</h5>
-                            <div class="container">
-                                <img src="img/artistpg1.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
+    <!-- YOUR CONTENT ENDS HERE -->
 
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Shanti Dope</p>
-                </div> <!-- Closing Image 1 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 2 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist2.jpg"
-                        href="#modal2" alt="avatar" style="border-radius: 50%">
-                    <!-- modal trigger -->
-                    <div id="modal2" class="modal modal-fixed-footer">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Coldplay</h5>
-                            <div class="container">
-                                <img src="img/artistpg2.jpg" style="width: 500px">
-                                <p style="color: white">Coldplay are a British rock band formed in London in 1996.[1][2]
-                                    The four members, lead vocalist/pianist
-                                    Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman and drummer Will
-                                    Champion were at University College London
-                                    and came together from 1996 to 1998, during which time the band changed names from
-                                    Pectoralz, to Starfish, then Coldplay.[3][4]
-                                    Creative director and former manager Phil Harvey is often referred to as the fifth
-                                    member by the band.[4] They recorded and
-                                    released two EPs: Safety in 1998 and The Blue Room in 1999. The latter was their
-                                    first release on a major label, after signing
-                                    to Parlophone</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Coldplay</p>
-                </div> <!-- Closing Image 2 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 3 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist3.jpg"
-                        href="#modal3" alt="avatar" style="border-radius: 50%">
-                    <!-- modal trigger -->
-                    <div id="modal3" class="modal modal-fixed-footer">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Two Door Cinema Club</h5>
-                            <div class="container">
-                                <img src="img/artistpg3.jpg" style="width: 500px">
-                                <p style="color: white">wo Door Cinema Club are a Northern Irish indie rock band from
-                                    Bangor and Donaghadee, County
-                                    Down. The band formed in 2007 and is composed of three members: Alex Trimble
-                                    (vocals, rhythm guitar, beats, synths),
-                                    Sam Halliday (lead guitar, backing vocals), and Kevin Baird (bass, synths, backing
-                                    vocals). The band's debut album,
-                                    Tourist History, was released on 1 March 2010 by French independent record label
-                                    Kitsuné Music. In the United States,
-                                    where the band are signed to Glassnote Records, the album was released on 27 April
-                                    2010. Tourist History was selected
-                                    for the Choice Music Prize for Irish Album of the Year (2010) the following year.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Two Door Cinema CLub</p>
-                </div> <!-- Closing Image 3 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 4 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist4.jpg"
-                        href="#modal4" alt="avatar" style="border-radius: 50%">
-                    <!-- modal trigger -->
-                    <div id="modal4" class="modal modal-fixed-footer">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Jessie Reyez</h5>
-                            <div class="container">
-                                <img src="img/artistpg4.jpg" style="width: 500px">
-                                <p style="color: white">Jessie Reyez (born June 12, 1991) is a Canadian singer and
-                                    songwriter. Her 2016 single
-                                    "Figures" peaked at number 58 on the Canadian Hot 100 in 2017 and was certified
-                                    double platinum by Music Canada.
-                                    In August 2018, Reyez collaborated with Eminem on "Nice Guy" and "Good Guy", from
-                                    the album Kamikaze.
-                                    On April 9, 2019, Reyez released the single “Imported'” featuring 6lack.</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Jessie Reyez</p>
-                </div> <!-- Closing Image 4 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 5 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist5.jpg"
-                        href="#modal5" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal5" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Russ</h5>
-                            <div class="container">
-                                <img src="img/artistpg5.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Russ</p>
-                </div> <!-- Closing Image 5 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 6 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist6.jpg"
-                        href="#modal6" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal6" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Billie Eilish</h5>
-                            <div class="container">
-                                <img src="img/artistpg6.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Billie Eilish</p>
-                </div> <!-- Closing Image 6 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 7 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist7.jpg"
-                        href="#modal7" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal7" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Bruno Mars</h5>
-                            <div class="container">
-                                <img src="img/artistpg7.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as HAIM, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    HAIM started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Bruno Mars</p>
-                </div> <!-- Closing Image 7 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 8 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist8.jpg"
-                        href="#modal8" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal8" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">HAIM</h5>
-                            <div class="container">
-                                <img src="img/artistpg8.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as Ezra Furman, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    Ezra Furman started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">HAIM</p>
-                </div> <!-- Closing Image 8 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 9 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist9.jpg"
-                        href="#modal9" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal9" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Logic</h5>
-                            <div class="container">
-                                <img src="img/artistpg9.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as Logic, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    Logic started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Logic</p>
-                </div> <!-- Closing Image 9 -->
-                <div class="col s6 m4 l3">
-                    <!-- Image 10 -->
-                    <img class="responsive-img waves-effect waves-light modal-trigger" src="img/artist10.jpg"
-                        href="#modal10" alt="avatar" style="border-radius: 50%; border-image: 10px;">
-                    <!-- modal trigger -->
-                    <div id="modal10" class="modal modal-fixed-footer" style="width: 60%;">
-                        <!-- modal content -->
-                        <div class="modal-content" style="background: #212121">
-                            <h5 style="color: white; text-align: center">Ezra Furman</h5>
-                            <div class="container">
-                                <img src="img/artistpg10.jpg" style="width: 500px">
-                                <p style="color: white">Sean Patrick Ramos (born April 15, 2001), known professionally
-                                    as Shanti Dope, is a Filipino rapper and songwriter. He is known for his songs
-                                    "Nadarang",[2] "Shantidope", "MAU", and Amatz.
-                                    Shanti Dope started writing verses in 2013 following the footsteps of local rappers
-                                    who use songwriting as a way to tell stories. Influenced by the idea of storytelling
-                                    through rap, his first long verse got him into rapper Smugglaz' 2015 album Walking
-                                    Distance</p>
-                            </div>
-                        </div>
-                        <!-- modal footer -->
-                        <div class="modal-footer" style="background: black">
-                            <a href="#!"
-                                class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
-                        </div>
-                    </div>
-                    <p style="color: white ; text-align: center; font-size: 20px">Ezra Furman</p>
-                </div> <!-- Closing Image 10 -->
-                <!-- Closing Row 1 -->
-                <!-- row 2 -->
-            </div>
-    </section>
-    </div>
 
     <!-- BOTTOM MEDIA CONTROLS -->
-    <div class="bottom-fixed grey darken-4 white-text z-depth-3  waves-effect waves-purple"
+    <div id="media-controls" class="bottom-fixed grey darken-4 white-text z-depth-3 waves-effect waves-purple"
         style="padding-bottom: 10px;">
         <!-- PROGRESS BAR -->
         <div class="progress grey">
-            <div class="determinate purple" style="width: 70%"></div>
+            <div class="determinate" style="width: 70%"></div>
         </div>
-
         <!-- FOR SMALL SCREEN ONLY -->
         <div class="row no-margin show-on-small hide-on-med-and-up center modal-trigger" href="#player">
-            <p><span>Nadarang </span>&#x2022; Shanti Dong</p>
+            <p><span>Nadarang </span>&#x2022; Shanti Dong </p>
         </div>
-
         <!-- FOR MEDIUM AND UP -->
         <div class="row no-margin">
             <div class="col s12 m6 l4 hide-on-small-only waves-effect waves-purple modal-trigger" href="#player">
@@ -426,24 +191,33 @@
                 </div>
             </div>
             <div class="col s12 m6 l4 center">
+                <a href="#!" class="star-btn btn-floating hide-on-large-only transparent z-depth-0"><i
+                        class="material-icons">star_border</i></a>
                 <span>0:00</span>
                 <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                         class="material-icons">skip_previous</i></a>
-                <a href="#!" class="black pulse btn-floating waves-effect waves-purple btn-large"><i
+                <a href="#!" class="play-btn black pulse btn-floating btn-large"><i
                         class="material-icons">play_arrow</i></a>
                 <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                         class="material-icons">skip_next</i></a>
                 <span>3:54</span>
+                <a href="#!" class="btn-floating  waves-effect waves-purple transparent z-depth-0  hide-on-large-only"
+                    data-target='mobile-menu-dropdown' id="mobile-menu">
+                    <i class='material-icons'>more_horiz</i>
+                </a>
             </div>
             <div class="col s12 m6 l4 hide-on-med-and-down">
-                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                <a href="#!" class="star-btn btn-floating btn-large right transparent z-depth-0"><i
+                        class="material-icons">star_border</i></a>
+                <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
                         class="material-icons">replay</i></a>
-                <a href="#!" class="btn-floating right waves-effect waves-purple transparent z-depth-0"><i
+                <a class='dropdown-trigger btn-floating right waves-effect btn-large waves-purple transparent z-depth-0'
+                    id="volume" href='#' data-target='volume-dropdown'><i class="material-icons">volume_up</i></a>
+                <a href="#!" class="btn-floating right waves-effect btn-large waves-purple transparent z-depth-0"><i
                         class="material-icons">shuffle</i></a>
             </div>
         </div>
     </div>
-
 
     <!-- FULLSCREEN PLAYER -->
     <div id="player" class="modal bottom-sheet grey darken-4">
@@ -462,11 +236,9 @@
                         <li><a class="waves-effect" href="#side-nav"><i class="material-icons">equalizer</i></a></li>
                     </ul>
                 </div>
-
-                <!-- </div> -->
             </nav>
         </header>
-        <div class="container">
+        <div id="fullscreen-player" class="container">
             <div class="modal-content">
                 <div class="row">
                     <div class="col s12 m6 l4">
@@ -477,8 +249,8 @@
                         <h3>Nadarang</h3>
                         <h5>Shanti Dong</h5>
                         <br>
-                        <div class="progress red lighten-3">
-                            <div class="determinate red" style="width: 70%"></div>
+                        <div class="progress grey">
+                            <div class="determinate" style="width: 70%"></div>
                         </div>
                         <span>0:00</span>
                         <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
@@ -488,13 +260,23 @@
                         <a href="#!" class="btn-floating waves-effect waves-purple btn-large transparent z-depth-0"><i
                                 class="material-icons">skip_next</i></a>
                         <span>3:54</span>
-
-                        <a href="#!"
-                            class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
-                                class="material-icons">replay</i></a>
-                        <a href="#!"
-                            class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
-                                class="material-icons">shuffle</i></a>
+                        <br><br>
+                        <div class="row">
+                            <div class="col s3">
+                                <a href="#!"
+                                    class="btn-floating right waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                        class="material-icons">replay</i></a>
+                            </div>
+                            <div class="col s6">
+                                <label for="test5">Volume</label>
+                                <input class="browser-default" type="range" id="test5" min="0" max="100" />
+                            </div>
+                            <div class="col s3">
+                                <a href="#!"
+                                    class="btn-floating left waves-effect waves-purple btn-large transparent z-depth-0"><i
+                                        class="material-icons">shuffle</i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -502,43 +284,54 @@
                         <h6>UP NEXT</h6>
                         <table>
                             <tbody>
-                                <tr>
+                                <tr class="upnext-list">
                                     <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
                                     <td>
                                         Materyal <br>
                                         <span class="smaller-text">Shanti Dong</span>
                                     </td>
-                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="upnext-list">
                                     <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
                                     <td>
                                         Norem <br>
                                         <span class="smaller-text">Shanti Dong</span>
                                     </td>
-                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="upnext-list">
                                     <td width="75px"><img src="img/album1.jpg" class="responsive-img"></td>
                                     <td>
                                         Shantidong <br>
                                         <span class="smaller-text">Shanti Dong</span>
                                     </td>
-                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="upnext-list">
                                     <td width="75px"><img src="img/album2.jpg" class="responsive-img"></td>
                                     <td>
                                         I'm captivated <br>
                                         <span class="smaller-text">IV of SPED</span>
                                     </td>
-                                    <td class="right"><br> <i class="material-icons grey-text text-darken-2">reorder</i>
+                                    <td class="right"><br>
+                                        <a class="upnext" data-target='upnext-dropdown'>
+                                            <i class="material-icons grey-text text-darken-2">reorder</i>
+                                        </a>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -549,48 +342,231 @@
 
     </div>
 
+    <!-- CONTEXT MENUS -->
 
+    <!-- CONTEXT MENU FOR NAVBAR -->
+    <ul id='three-dot-dropdown' class='dropdown-content black'>
+        <li><a href="account.html"><i class="material-icons">person</i>Account</a></li>
+        <li><a href="settings.html"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="index.html"><i class="material-icons">exit_to_app</i>Sign Out</a></li>
+    </ul>
 
+    <!-- FULLSCREEN PLAYER DROPDOWN AND SUBMENU -->
+    <ul id='upnext-dropdown' class='dropdown-content black'>
+        <li><a href="#!"><i class="material-icons">close</i>Remove</a></li>
+        <li>
+            <a id="context-menu-submenu" data-target='context-menu-dropdown-submenu'>
+                <i class="material-icons">add</i>
+                Add to Playlist
+            </a>
+        </li>
+    </ul>
 
+    <!-- SUBMENU DROPDOWN-->
+    <ul id='context-menu-dropdown-submenu' class='dropdown-content black'>
+        <p class="center"><label class="center">Add to Playlist</label> </p>
+        <li><a href="#!">Playlist 1</a></li>
+        <li><a href="#!">Playlist 2</a></li>
+        <li><a href="#!">Playlist 3</a></li>
+    </ul>
 
-    <!-- SCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- VOLUME DROPDOWN -->
+    <ul id='volume-dropdown' class='dropdown-content black'>
+        <div style="padding: 10px 20px; width: 200px;">
+            <label for="test5">Volume</label>
+            <input class="browser-default" type="range" id="test5" min="0" max="100" />
+        </div>
+    </ul>
+
+    <!-- MOBILE ONLY DROPDOWN -->
+    <ul id='mobile-menu-dropdown' class='dropdown-content black'>
+        <li><a href="#!"><i class="material-icons">replay</i>Repeat</a></li>
+        <li><a href="#!"><i class="material-icons">shuffle</i>Shuffle</a></li>
+        <!-- <p class="center smaller-text">Volume</p> -->
+        <div style="padding: 10px 20px; width: 200px;">
+            <label for="test5">Volume</label>
+            <!-- <i class="material-icons" >volume_up</i> -->
+            <input class="browser-default" type="range" id="test5" min="0" max="100" />
+        </div>
+    </ul>
+
+    <!-- WELCOME MODAL -->
+    <div id="welcome-modal" class="modal rounded z-depth-1">
+        <div class="modal-content deep-purple-gradient white-text center">
+            <i class="material-icons large">headset</i>
+            <h4>Welcome to PWAMUSIC!</h4>
+            <p>The most advanced PWA music app. Get Premium to unlock all features</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn right deep-purple-gradient waves-effect" onclick="$('.feature').tapTarget('open')">GET
+                PREMIUM</a>
+            <a id="skip" class="btn-flat left waves-effect modal-close">SKIP</a>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <script>
+        $(document).ready(function () {
+            //DO THIS FUNCTION EVERY TIME THE APP LOADS
+            // 
+            fullScreenPlayer();
+
+            //INITIALIZATIONS
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+
+
+            if (localStorage.getItem('welcome') === null) {
+                localStorage.setItem('welcome', 0);
+
+            }
+
+            if (localStorage.getItem('welcome') == 0) {
+                $('#welcome-modal').modal('open');
+            }
+
+            $('#skip').on('click', function () {
+                localStorage.setItem('welcome', 1);
+            });
+
+
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            })
+            $('.collapsible').collapsible();
+
+            $('#volume').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#three-dot').dropdown({
+                alignment: 'left',
+                closeOnClick: true,
+                constrainWidth: false,
+                coverTrigger: false,
+                container: 'body'
+            });
+
+
+            $('#mobile-menu').dropdown({
+                alignment: 'left',
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('.upnext').dropdown({
+                closeOnClick: false,
+                constrainWidth: false,
+                container: 'body'
+            });
+
+            $('#context-menu-submenu').dropdown({
+                alignment: 'right',
+                closeOnClick: false,
+                coverTrigger: false,
+                onCloseEnd: function () {
+                    // $('.upnext').dropdown('close');
+                    M.toast({
+                        html: ' Added to Playlist.<button class="btn-flat toast-action deep-purple-gradient-text  ">Undo</button>',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+            $('#tabs-swipe-demo').tabs({
+                swipeable: true
+            });
+
+            //CHANGE ICONS WHEN CLICKED
+            $('.play-btn').on('click', function () {
+                if ($('.play-btn').text() == 'play_arrow') {
+                    $('.play-btn').children().text('pause');
+                } else if ($('.play-btn').text() == 'pause') {
+                    $('.play-btn').children().text('play_arrow');
+                }
+            });
+            $('.star-btn').on('click', function () {
+                console.log($('.star-btn').text());
+                if ($('.star-btn').text() == 'star_borderstar_border') {
+                    $('.star-btn').children().text('star');
+                    M.toast({
+                        html: 'Added to Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                } else if ($('.star-btn').text() == 'starstar') {
+                    $('.star-btn').children().text('star_border');
+                    M.toast({
+                        html: 'Removed from Favorites',
+                        classes: 'rounded grey darken-4',
+                        displayLength: 2500
+                    });
+                }
+            });
+
+
+            $('.upnext-list').contextmenu(function (e) {
+                // alert('Gago ba u');
+                // $('#mobile-menu-dropdown').dropdown('open');
+                $('.upnext').dropdown('open');
+                e.preventDefault();
+            })
+
+            //MAKES ALL THE DROPDOWN HOVER COLOR DEEP PURPLE
+            $(".dropdown-content>li>a").css("color", "deep-purple");
+
+            //CALLS A FUNCTION EVERYTIME THE BROWSER WINDOW IS RESIZED
+            $(window).resize(function () {
+                fullScreenPlayer();
+            });
+
+
+            $('.feature').tapTarget();
+
+            $('#side-nav').on('click', highlightSidenav);
+
+            function highlightSidenav(e) {
+                console.log(e.target)
+            }
+            setTimeout(function () {
+                $('.preloader-container').fadeOut();
+            }, 1000);
+
+
+        });
+
+        //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
+        function fullScreenPlayer() {
+            if ($(document).width() <= 600) {
+                $('#fullscreen-player').removeClass('container')
+            } else {
+                $('#fullscreen-player').addClass('container')
+            }
+        }
+
+        //NOTHING BUT FOR FAKE PROGRESS BAR
+        let progress = 0;
+
         function timeout() {
             setTimeout(function () {
                 progress += 1;
                 document.querySelector('.determinate').style.width = `${progress}%`;
-                if (progress < 100) {
-                    // progress = 0;
-
-                } else if (progress >= 99) {
+                if (progress >= 99) {
                     progress = 0;
                 }
-
                 timeout();
             }, 1000);
 
         }
         timeout();
-        //JQUERY INITIALIZE
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-            $('.modal').modal();
-            $('.parallax-container').parallax();
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true
-            })
-            $('.scrollspy').scrollspy();
-
-        });
-
-        //FOR PROGRESS BAR
-        let progress = 0;
-
-
     </script>
 
 </body>
