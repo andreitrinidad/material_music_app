@@ -16,6 +16,50 @@
 </head>
 
 <body>
+       <!-- PRELOADER -->
+       <div class="preloader-container">
+           <div class="preloader-logo"><i class="material-icons deep-purple-gradient-text large">headset</i></div>  -->
+            <!-- <i class="material-icons large">headset</i> -->
+            <div class="loader preloader-wrapper active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
     <!-- NAVBAR -->
     <header class="navbar-fixed">
         <nav class="nav-extended grey darken-4">
@@ -44,7 +88,7 @@
 
             </div>
             <div class="nav-content">
-                <ul id="tabs-swipe-demo" class="tabs tabs-custom  grey darken-4">
+                <ul id="tabs-swipe-demo" class="tabs tabs-custom grey darken-4">
                     <li class="tab col s3"><a href="#test-swipe-1">Tracks</a></li>
                     <li class="tab col s3"><a href="#test-swipe-2">Albums</a></li>
                     <li class="tab col s3"><a class="active" href="#test-swipe-3">Artist</a></li>
@@ -68,7 +112,7 @@
                 </div>
             </div>
         </li>
-        <li class="deep-purple-gradient"><a href="#!" class="white-text"><i
+        <li><a onclick="$('#tabs-swipe-demo').tabs('select', 'test-swipe-1')" class="white-text"><i
                     class="material-icons white-text">album</i>Tracks</a>
         </li>
         <div class="collapsible">
@@ -90,9 +134,9 @@
                 </div>
             </li>
         </div>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">settings</i>Settings</a></li>
+        <li><a onclick="$('#tabs-swipe-demo').tabs('select', 'test-swipe-2')" class="white-text"><i class="material-icons white-text">library_music</i>Albums</a></li>
+        <li><a onclick="$('#tabs-swipe-demo').tabs('select', 'test-swipe-3')" class="white-text"><i class="material-icons white-text">account_box</i>Artists</a></li>
+        <li><a onclick="$('#tabs-swipe-demo').tabs('select', 'test-swipe-4')" class="white-text"><i class="material-icons white-text">settings</i>Settings</a></li>
         <li><a href="#!" class="white-text btn deep-purple-gradient">SIGN OUT</a></li>
     </ul>
 
@@ -1369,6 +1413,17 @@
 
 
             $('.feature').tapTarget();
+
+            $('#side-nav').on('click', highlightSidenav);
+
+            function highlightSidenav(e){
+                console.log(e.target)
+            }
+           setTimeout(function(){
+            $('.preloader-container').fadeOut();
+           }, 3000);
+
+            
         });
 
         //REMOVES THE FULL SCREEN PLAYER CONTAINER CLASS WHEN SCREEN SIZE IS SMALL
