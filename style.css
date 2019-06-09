@@ -145,6 +145,61 @@ body{
     /* height: 1000px; */
     font-family: Roboto !important;
 }
+/* SLIDER INDICATOR */
+.slider .indicators .indicator-item.active {
+  background-color: #4a148c ;
+}
+/* // SECTION ALBUMS // */
+.section-albums .slider ul li .primary-overlay {
+
+  position: absolute; 
+  top: 0; left: 0; 
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+}  
+
+.section-albums .row .col .card .card-image .modal .modal-footer {
+  background: black
+
+}
+.section-albums .row .col .card .modal-content {
+background: #212121
+}
+
+.section-albums .row .col .card .modal-content h5 {
+  color: white; 
+  text-align: center
+  
+  }
+
+  .section-albums .row .col .card .modal-content p {
+    color: white; 
+    text-align: center
+
+  }
+
+  .section-albums .row .col .card .card-content{
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    width:100px;
+
+  }
+
+  /* SECTION ARTISTS */
+  .section-artists .container .row .col 
+  .modal .modal-content .primary-overlay {
+position: relative;
+text-align: center;
+color: white;
+  }
+
+  .section-artists .top-left {
+position: absolute;
+top: 8px;
+left: 16px;
+  }
 
 /* FIXED THE FOOTER */
 .bottom-fixed {
